@@ -60,6 +60,10 @@ public class Fade : MonoBehaviour
     {
         fadeOut = true;
     }
+    public bool IsFade()
+    {
+        return fadeIn || fadeOut;
+    }
     public bool GetGoNextScene()
     {
         return goNextScene;

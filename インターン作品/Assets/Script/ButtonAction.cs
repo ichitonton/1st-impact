@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.SearchService;
@@ -8,6 +9,11 @@ public class ButtonAction : MonoBehaviour
 {
     public Fade fade;
     string sceneName;
+    private GameObject scoreText;
+    void Start()
+    {
+        scoreText = GameObject.Find("ScoreText"); // ç°âÒí«â¡â”èä    
+    }
     void Update()
     {
         if (fade.GetGoNextScene())
@@ -18,16 +24,27 @@ public class ButtonAction : MonoBehaviour
 
     public void changeScene(string scene)
     {
-        fade.IsFadeOut();
-        sceneName = scene;
-        //SceneManager.LoadScene(sceneName);//sceneÇåƒÇ—èoÇµÇ‹Ç∑
+        if (!fade.IsFade())
+        {
+            fade.IsFadeOut();
+            sceneName = scene;
+            //SceneManager.LoadScene(sceneName);//sceneÇåƒÇ—èoÇµÇ‹Ç∑
+        }
     }
     public void end()
     {
-        Debug.Log("Press the end button");
+        if (!fade.IsFade())
+        {
+            Debug.Log("Press the end button");
 
-        UnityEditor.EditorApplication.isPlaying = false;
+            UnityEditor.EditorApplication.isPlaying = false;
 
-        //Application.Quit();
+            //Application.Quit();
+        }
+    }
+
+    public void addScore()
+    {
+        scoreText.GetComponent<ScoreManager>().score += 1;
     }
 }
