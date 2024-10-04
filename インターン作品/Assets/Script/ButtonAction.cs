@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class ButtonAction : MonoBehaviour
 {
     public Fade fade;
-    string sceneName;
+    string sceneName = "NULL";
     private GameObject scoreText;
     void Start()
     {
@@ -18,7 +18,17 @@ public class ButtonAction : MonoBehaviour
     {
         if (fade.GetGoNextScene())
         {
-            SceneManager.LoadScene(sceneName);
+            //スコア保存
+            if (SceneManager.GetActiveScene().name == "GameScene")
+            {
+                PlayerPrefs.SetInt("SCORE", scoreText.GetComponent<ScoreManager>().score);
+                PlayerPrefs.Save();
+            }
+            //シーン遷移
+            if (sceneName != "NULL")
+            {
+                SceneManager.LoadScene(sceneName);
+            }
         }
     }
 
