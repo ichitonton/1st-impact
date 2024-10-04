@@ -32,7 +32,7 @@ public class ButtonAction : MonoBehaviour
         }
     }
 
-    public void changeScene(string scene)
+    public void ChangeScene(string scene)
     {
         if (!fade.IsFade())
         {
@@ -41,7 +41,7 @@ public class ButtonAction : MonoBehaviour
             //SceneManager.LoadScene(sceneName);//sceneÇåƒÇ—èoÇµÇ‹Ç∑
         }
     }
-    public void end()
+    public void End()
     {
         if (!fade.IsFade())
         {
@@ -53,8 +53,9 @@ public class ButtonAction : MonoBehaviour
         }
     }
 
-    public void addScore()
+    public void AddScore()
     {
         scoreText.GetComponent<ScoreManager>().score += 1;
     }
+
 }

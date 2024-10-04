@@ -29,7 +29,7 @@ public class Fade : MonoBehaviour
     {
         if (fadeIn)
         {
-            Debug.Log("fadein now");
+            //Debug.Log("fadein now");
             gameObject.GetComponent<Image>().color -= new Color32(0, 0, 0, (byte)fadeSpeed);
             alpha -= fadeSpeed;
             //フェードイン終了
@@ -40,7 +40,7 @@ public class Fade : MonoBehaviour
         }
         if (fadeOut)
         {
-            Debug.Log("fadeout now");
+            //Debug.Log("fadeout now");
             gameObject.GetComponent<Image>().color += new Color32(0, 0, 0, (byte)fadeSpeed);
             alpha += fadeSpeed;
 

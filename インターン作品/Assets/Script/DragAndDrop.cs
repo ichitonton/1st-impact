@@ -23,7 +23,7 @@ public class DragAndDrop : MonoBehaviour
     }
     private void OnMouseDrag()
     {
-        Debug.Log("drag");
+        //Debug.Log("drag");
         transform.position = GetMousePos() + Offset;
     }
     private Vector3 GetMousePos()
