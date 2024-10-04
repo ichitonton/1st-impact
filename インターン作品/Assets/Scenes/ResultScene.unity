@@ -218,7 +218,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 289380112}
         m_TargetAssemblyTypeName: ButtonAction, Assembly-CSharp
-        m_MethodName: changeScene
+        m_MethodName: ChangeScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -954,7 +954,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1493553935}
         m_TargetAssemblyTypeName: ButtonAction, Assembly-CSharp
-        m_MethodName: changeScene
+        m_MethodName: ChangeScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1305,7 +1305,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -299}
+  m_AnchoredPosition: {x: 254, y: -160}
   m_SizeDelta: {x: 238.13, y: 79.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2080500854
@@ -1367,7 +1367,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2080500854}
         m_TargetAssemblyTypeName: ButtonAction, Assembly-CSharp
-        m_MethodName: end
+        m_MethodName: End
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

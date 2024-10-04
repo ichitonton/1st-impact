@@ -7,6 +7,8 @@ public class PhysicsWater : MonoBehaviour
     public GameObject water;
     Rigidbody2D rigid;
     public float buoyancy; //•‚—Í
+    public float defaultPositionX = -5.0f;
+    float distansFromDefault;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,8 @@ public class PhysicsWater : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        distansFromDefault = defaultPositionX - gameObject.GetComponent<Transform>().position.x;
+        rigid.velocityX = distansFromDefault * 0.1f;
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -45,7 +49,7 @@ public class PhysicsWater : MonoBehaviour
     public void Sink()
     {
         //‰ºŒü‚«‚É‰Á‘¬“x‚ð‰Á‚¦‚é
-        Vector2 force = new Vector2(0.0f, -3.5f);
+        Vector2 force = new Vector2(0.0f, -10.0f);
         rigid.AddForce(force, ForceMode2D.Force);
     }
 }

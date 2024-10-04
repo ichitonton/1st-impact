@@ -11,7 +11,7 @@ public class DackSink : MonoBehaviour
     {
         if(buttonDownFlag)
         {
-            Debug.Log("Hold");
+            //Debug.Log("Hold");
             GameObject.Find(DackObjName).GetComponent<PhysicsWater>().Sink();
         }
         
