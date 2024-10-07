@@ -354,8 +354,8 @@ GameObject:
   - component: {fileID: 215368236}
   - component: {fileID: 215368235}
   - component: {fileID: 215368234}
-  - component: {fileID: 215368238}
   - component: {fileID: 215368237}
+  - component: {fileID: 215368238}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -472,7 +472,7 @@ Transform:
   m_GameObject: {fileID: 215368233}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.92, y: 0.31, z: 0}
+  m_LocalPosition: {x: -9.4, y: 0.31, z: 0}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -514,11 +514,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 215368233}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f477f28c4bb023d4181f81af93c85be1, type: 3}
+  m_Script: {fileID: 11500000, guid: 7445f12c3cfcf814abf819872eb745ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveForce: 5
-  moveVelocity: 1
+  moveVelocityX: -1
+  resetPositionX: 9.5
+  outsidePositionX: -9.5
 --- !u!1 &615578882
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,7 +601,7 @@ Transform:
   m_GameObject: {fileID: 615578882}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -9.65, y: -0.01, z: 10}
+  m_LocalPosition: {x: -10.69, y: -0.01, z: 10}
   m_LocalScale: {x: 19.815525, y: 1.0397, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1351,7 +1352,7 @@ Transform:
   m_GameObject: {fileID: 1818191308}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 9.62, y: 0.51, z: 10}
+  m_LocalPosition: {x: 10.77, y: 0.51, z: 10}
   m_LocalScale: {x: 19.815525, y: 1.0397, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
