@@ -21,7 +21,7 @@ public class GoalManager : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //ÉvÉåÉCÉÑÅ[Ç∆êGÇÍÇΩÇÁ
-        if (player.GetComponent<Collision2D>() == collision)
+        if (collision.gameObject.name == player.name)
         {
             Debug.Log("isGoal true");
             isGoal = true;
