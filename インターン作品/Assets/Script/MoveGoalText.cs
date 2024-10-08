@@ -24,30 +24,33 @@ public class MoveGoalText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //
+        //ゴールしたら
         if (goal.GetIsGoal())
         {
+            //結果が決まった
             isDecisionResult = true;
-            //
+            //タイマーストップ
             timer.StopTimer();
 
             text.text = successMessage + "\n";
             text.text += "残り時間："　+ timer.GetTime().ToString();
         }
 
-        //
+        //時間内にゴールできなかったら
         if (!goal.GetIsGoal() && timer.GetTime() <= 0)
         {
+            //結果が決まった
             isDecisionResult = true;
-            //
+            //タイマーストップ
             timer.StopTimer();
 
             text.text = failureMessage;
         }
 
+        //結果が決まったら
         if (isDecisionResult)
         {
-            //
+            //テキストを動かす
             trans.position = new Vector3(trans.position.x + moveSpeed, trans.position.y, trans.position.z);
 
         }

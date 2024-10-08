@@ -5,14 +5,14 @@ using UnityEngine;
 public class DackSink : MonoBehaviour
 {
     private bool buttonDownFlag = false;
-    public string DackObjName;
+    public GameObject DackObj;
     // Update is called once per frame
     void Update()
     {
         if(buttonDownFlag)
         {
             //Debug.Log("Hold");
-            GameObject.Find(DackObjName).GetComponent<PhysicsWater>().Sink();
+            DackObj.GetComponent<PhysicsWater>().Sink();
         }
         
     }

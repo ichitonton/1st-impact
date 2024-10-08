@@ -10,7 +10,7 @@ public class Fade : MonoBehaviour
     bool fadeOut = false;
     bool goNextScene = false;
     int alpha = 255;
-    int fadeSpeed = 6;
+    public int fadeSpeed = 6;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +22,7 @@ public class Fade : MonoBehaviour
         fadeIn = true;
         fadeOut = false;
         goNextScene = false;
+        Time.timeScale = 0;
     }
 
     // Update is called once per frame
@@ -36,6 +37,7 @@ public class Fade : MonoBehaviour
             if (alpha <= 0)
             {
                 fadeIn = false;
+                Time.timeScale = 1;
             }
         }
         if (fadeOut)
@@ -58,6 +60,8 @@ public class Fade : MonoBehaviour
 
     public void IsFadeOut()
     {
+
+        Time.timeScale = 0;
         fadeOut = true;
     }
     public bool IsFade()

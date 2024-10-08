@@ -10,7 +10,7 @@ public class TimerManager : MonoBehaviour
     private float time = 0.0f;
     private int sec = 0;
     private int msec = 0;
-    private bool isCountTimer = false;
+    private bool isCountTimer = false;//タイマーを動かすかどうか
     // Start is called before the first frame update
     void Start()
     {
@@ -20,61 +20,75 @@ public class TimerManager : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
+        if(Time.timeScale == 0)
+        {
+
+            time = countDownMax;
+        }
+    }
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        sec = (int)time;//秒
+        msec = (int)(time * 1000 % 1000);
+
+        SetTimeText(sec, msec);
         if (!isCountTimer)
         {
             time -= Time.deltaTime;//毎フレームの時間を減算
         }
-        sec = (int)time;//秒
-        msec = (int)(time * 1000 % 1000);
+    }
 
-
+    private void SetTimeText(int s, int ms)
+    {
         //timeText.text = timeMax.ToString();
-        if(sec >= 100)//secが3桁以上
+        if (s >= 100)//sが3桁以上
         {
-            timeText.text = sec.ToString();
+            timeText.text = s.ToString();
         }
-        else if(sec >= 10)//secが2桁
+        else if (s >= 10)//sが2桁
         {
-            timeText.text = "0" + sec.ToString();
+            timeText.text = "0" + s.ToString();
         }
-        else if(sec >= 1)//secが1桁
+        else if (s >= 1)//sが1桁
         {
-            timeText.text = "00" + sec.ToString();
+            timeText.text = "00" + s.ToString();
 
         }
-        else if(sec < 1)//secが1未満(0)
+        else if (s < 1)//sが1未満(0)
         {
             timeText.text = "000";
         }
 
         timeText.text += ":";
 
-        if (msec >= 100)//msecが3桁以上
+        if (ms >= 100)//msが3桁以上
         {
-            timeText.text += msec.ToString();
+            timeText.text += ms.ToString();
         }
-        else if (msec >= 10)//msecが2桁
+        else if (ms >= 10)//msが2桁
         {
-            timeText.text += "0" + msec.ToString();
+            timeText.text += "0" + ms.ToString();
         }
-        else if (msec >= 1)//msecが1桁
+        else if (ms >= 1)//msが1桁
         {
-            timeText.text += "00" + msec.ToString();
+            timeText.text += "00" + ms.ToString();
 
         }
-        else if (msec < 1)//msecが1未満(0)
+        else if (ms < 1)//msが1未満(0)
         {
             timeText.text += "000";
         }
     }
+
     public float GetTime()
     {
         return time;
     }
 
+    //タイマーストップ
     public void StopTimer()
     {
         isCountTimer = true;
