@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MoveGoalText : MonoBehaviour
+public class MoveResultText : MonoBehaviour
 {
     private RectTransform trans;
     private Text text;
@@ -33,7 +33,7 @@ public class MoveGoalText : MonoBehaviour
             timer.StopTimer();
 
             text.text = successMessage + "\n";
-            text.text += "残り時間："　+ timer.GetTime().ToString();
+            text.text += "残り時間："　+ timer.GetTime().ToString("F3");
         }
 
         //時間内にゴールできなかったら

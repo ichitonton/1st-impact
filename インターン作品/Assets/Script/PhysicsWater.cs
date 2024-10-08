@@ -9,11 +9,11 @@ public class PhysicsWater : MonoBehaviour
     public float buoyancy; //•‚—Í
     public float moveSpeed = 1.0f;
     float distansFromDefault;
+
     // Start is called before the first frame update
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
-
 
     }
 
