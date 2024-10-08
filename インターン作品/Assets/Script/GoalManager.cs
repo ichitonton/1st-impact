@@ -18,7 +18,7 @@ public class GoalManager : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         //ƒvƒŒƒCƒ„[‚ÆG‚ê‚½‚ç
         if (collision.gameObject.name == player.name)
