@@ -10,6 +10,7 @@ public class TimerManager : MonoBehaviour
     private float time = 0.0f;
     private int sec = 0;
     private int msec = 0;
+    private bool isCountTimer = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,10 @@ public class TimerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time -= Time.deltaTime;//–ˆƒtƒŒ[ƒ€‚ÌŠÔ‚ğŒ¸Z
+        if (!isCountTimer)
+        {
+            time -= Time.deltaTime;//–ˆƒtƒŒ[ƒ€‚ÌŠÔ‚ğŒ¸Z
+        }
         sec = (int)time;//•b
         msec = (int)(time * 1000 % 1000);
 
@@ -65,5 +69,14 @@ public class TimerManager : MonoBehaviour
         {
             timeText.text += "000";
         }
+    }
+    public float GetTime()
+    {
+        return time;
+    }
+
+    public void StopTimer()
+    {
+        isCountTimer = true;
     }
 }
