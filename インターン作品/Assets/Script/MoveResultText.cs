@@ -13,6 +13,7 @@ public class MoveResultText : MonoBehaviour
     private bool isDecisionResult = false;
     public string successMessage;
     public string failureMessage;
+    public float stopPositionX;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,7 @@ public class MoveResultText : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //ゴールしたら
         if (goal.GetIsGoal())
@@ -53,6 +54,10 @@ public class MoveResultText : MonoBehaviour
             //テキストを動かす
             trans.position = new Vector3(trans.position.x + moveSpeed, trans.position.y, trans.position.z);
 
+            if(trans.position.x >= stopPositionX)
+            {
+                trans.position = new Vector3(stopPositionX, trans.position.y, trans.position.z);
+            }
         }
 
     }

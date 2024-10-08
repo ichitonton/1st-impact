@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MovePlayer : MonoBehaviour
 {
-    public float moveSpeed = 1.0f;
+    public float moveSpeedBegin = 1.0f;
+    public float addForcePower = 3.0f;
     Rigidbody2D rigid;
     public Fade fade;
 
@@ -12,16 +11,16 @@ public class MovePlayer : MonoBehaviour
     void Start()
     {
         rigid = gameObject.GetComponent<Rigidbody2D>();
-        rigid.velocity = new Vector2(moveSpeed, 0.0f);
+        rigid.velocity = new Vector2(moveSpeedBegin, 0.0f);
 
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (rigid.velocityX <= moveSpeed)
+        if (rigid.velocityX <= moveSpeedBegin)
         {
-            rigid.AddForce(new Vector2(3.0f, 0.0f), ForceMode2D.Force);
+            rigid.AddForce(new Vector2(addForcePower, 0.0f), ForceMode2D.Force);
         }
 
     }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DackSink : MonoBehaviour
+public class ButtonDackSink : MonoBehaviour
 {
     private bool buttonDownFlag = false;
     public GameObject DackObj;

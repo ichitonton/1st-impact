@@ -37,7 +37,6 @@ public class Fade : MonoBehaviour
             if (alpha <= 0)
             {
                 fadeIn = false;
-                Time.timeScale = 1;
             }
         }
         if (fadeOut)
@@ -63,6 +62,10 @@ public class Fade : MonoBehaviour
 
         Time.timeScale = 0;
         fadeOut = true;
+    }
+    public bool IsFadeIn()
+    {
+        return fadeIn;
     }
     public bool IsFade()
     {

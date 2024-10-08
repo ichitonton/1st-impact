@@ -8,6 +8,7 @@ public class PhysicsWater : MonoBehaviour
     Rigidbody2D rigid;
     public float buoyancy; //•‚—Í
     public float moveSpeed = 1.0f;
+    public float addForceDown = 10.0f;
     float distansFromDefault;
 
     // Start is called before the first frame update
@@ -51,7 +52,7 @@ public class PhysicsWater : MonoBehaviour
     public void Sink()
     {
         //‰ºŒü‚«‚É‰Á‘¬“x‚ð‰Á‚¦‚é
-        Vector2 force = new Vector2(0.0f, -10.0f);
+        Vector2 force = new Vector2(0.0f, -addForceDown);
         rigid.AddForce(force, ForceMode2D.Force);
     }
 }
