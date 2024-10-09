@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class MoveResultText : MonoBehaviour
 {
-    private RectTransform trans;
-    private Text text;
+    private Transform trans;
+    public Text resultText;
     public GoalManager goal;
     public TimerManager timer;
     public float moveSpeed;//ゴール判定と同時に流れてくる→
@@ -17,35 +17,37 @@ public class MoveResultText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        trans = GetComponent<RectTransform>();
-        text = GetComponent<Text>();
-
+        trans = GetComponent<Transform>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         //ゴールしたら
-        if (goal.GetIsGoal())
+
+        if (!isDecisionResult)
         {
-            //結果が決まった
-            isDecisionResult = true;
-            //タイマーストップ
-            timer.StopTimer();
+            if (goal.GetIsGoal())
+            {
+                //結果が決まった
+                isDecisionResult = true;
+                //タイマーストップ
+                timer.StopTimer();
 
-            text.text = successMessage + "\n";
-            text.text += "残り時間："　+ timer.GetTime().ToString("F3");
-        }
+                resultText.text = successMessage + "\n";
+                resultText.text += "残り時間：" + timer.GetTime().ToString("F3");
+            }
 
-        //時間内にゴールできなかったら
-        if (!goal.GetIsGoal() && timer.GetTime() <= 0)
-        {
-            //結果が決まった
-            isDecisionResult = true;
-            //タイマーストップ
-            timer.StopTimer();
+            //時間内にゴールできなかったら
+            if (!goal.GetIsGoal() && timer.GetTime() <= 0)
+            {
+                //結果が決まった
+                isDecisionResult = true;
+                //タイマーストップ
+                timer.StopTimer();
 
-            text.text = failureMessage;
+                resultText.text = failureMessage;
+            }
         }
 
         //結果が決まったら
