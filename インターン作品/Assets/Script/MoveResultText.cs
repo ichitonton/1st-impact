@@ -8,7 +8,7 @@ public class MoveResultText : MonoBehaviour
     private Transform trans;
     public Text resultText;
     public GoalManager goal;
-    public TimerManager timer;
+    public SliderTimerManager timer;
     public float moveSpeed;//ƒS[ƒ‹”»’è‚Æ“¯‚É—¬‚ê‚Ä‚­‚é¨
     private bool isDecisionResult = false;
     public string successMessage;
