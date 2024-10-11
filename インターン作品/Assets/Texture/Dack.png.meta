@@ -129,12 +129,12 @@ TextureImporter:
       name: Dack_0
       rect:
         serializedVersion: 2
-        x: 53
-        y: 63
-        width: 1733
-        height: 1697
+        x: 54
+        y: 62
+        width: 1727
+        height: 1698
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -149,7 +149,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 75760019264e3cd41a77a82540ffdf07
     internalID: 0
     vertices: []
     indices: 

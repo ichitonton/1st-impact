@@ -7,6 +7,7 @@ public class SliderTimerManager : MonoBehaviour
 {
     private Slider timeSlider;
     public float countDownMax = 60.0f;
+    public Text timeText;
     private float time = 0.0f;
     private int sec = 0;
     private int msec = 0;
@@ -64,6 +65,11 @@ public class SliderTimerManager : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        sec = (int)time;//•b
+        msec = (int)(time * 1000 % 1000);
+
+        SetTimeText(sec, msec);
+
         timeSlider.value = time;
 
         if (!isCountTimer)
@@ -117,5 +123,47 @@ public class SliderTimerManager : MonoBehaviour
     public void StopTimer()
     {
         isCountTimer = true;
+    }
+
+    private void SetTimeText(int s, int ms)
+    {
+        //timeText.text = timeMax.ToString();
+        if (s >= 100)//s‚ª3Œ…ˆÈã
+        {
+            timeText.text = s.ToString();
+        }
+        else if (s >= 10)//s‚ª2Œ…
+        {
+            timeText.text = "0" + s.ToString();
+        }
+        else if (s >= 1)//s‚ª1Œ…
+        {
+            timeText.text = "00" + s.ToString();
+
+        }
+        else if (s < 1)//s‚ª1–¢–ž(0)
+        {
+            timeText.text = "000";
+        }
+
+        timeText.text += ":";
+
+        if (ms >= 100)//ms‚ª3Œ…ˆÈã
+        {
+            timeText.text += ms.ToString();
+        }
+        else if (ms >= 10)//ms‚ª2Œ…
+        {
+            timeText.text += "0" + ms.ToString();
+        }
+        else if (ms >= 1)//ms‚ª1Œ…
+        {
+            timeText.text += "00" + ms.ToString();
+
+        }
+        else if (ms < 1)//ms‚ª1–¢–ž(0)
+        {
+            timeText.text += "000";
+        }
     }
 }
