@@ -15,6 +15,7 @@ public class MoveResultText : MonoBehaviour
     public string successMessage;
     public string failureMessage;
     public float stopPositionX;
+    public string thisSceneName;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,18 +42,31 @@ public class MoveResultText : MonoBehaviour
 
                 if (timer.GetGrade() == 3)
                 {
+                    PlayerPrefs.SetInt(thisSceneName, 3);
                     resultText.text += "ÅöÅöÅö";
                 }
                 if (timer.GetGrade() == 2)
                 {
+                    if(PlayerPrefs.GetInt(thisSceneName) < 2)
+                    {
+                        PlayerPrefs.SetInt(thisSceneName, 2);
+                    }
                     resultText.text += "ÅöÅöÅô";
                 }
                 if (timer.GetGrade() == 1)
                 {
+                    if (PlayerPrefs.GetInt(thisSceneName) < 1)
+                    {
+                        PlayerPrefs.SetInt(thisSceneName, 1);
+                    }
                     resultText.text += "ÅôÅöÅô";
                 }
                 if (timer.GetGrade() == 0)
                 {
+                    if (PlayerPrefs.GetInt(thisSceneName) < 0)
+                    {
+                        PlayerPrefs.SetInt(thisSceneName, 0);
+                    }
                     resultText.text += "ÅôÅôÅô";
                 }
                 //ÉNÉäÉAÇ»ÇÁ

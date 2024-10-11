@@ -57,5 +57,9 @@ public class ButtonAction : MonoBehaviour
     {
         scoreText.GetComponent<ScoreManager>().score += 1;
     }
+    public void DeleteSaveData()
+    {
+        PlayerPrefs.DeleteAll();
+    }
 
 }

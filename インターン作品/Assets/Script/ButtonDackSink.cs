@@ -6,17 +6,20 @@ public class ButtonDackSink : MonoBehaviour
 {
     private bool buttonDownFlag = false;
     public GameObject DackObj;
+
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if(buttonDownFlag)
+        //if (Time.timeScale < 1)
         {
-            //Debug.Log("Hold");
-            DackObj.GetComponent<PhysicsWater>().Sink();
+            if (buttonDownFlag)
+            {
+                Debug.Log("Hold");
+                DackObj.GetComponent<PhysicsWater>().Sink();
+            }
         }
         
     }
-
     public void OnButtonDown()
     {
         buttonDownFlag = true;

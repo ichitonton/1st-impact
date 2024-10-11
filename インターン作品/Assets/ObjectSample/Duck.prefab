@@ -146,7 +146,7 @@ MonoBehaviour:
   water: {fileID: 0}
   buoyancy: 17
   moveSpeed: 1
-  addForceDown: 10
+  addForceDown: 11.5
 --- !u!114 &6312473571740500016
 MonoBehaviour:
   m_ObjectHideFlags: 0
