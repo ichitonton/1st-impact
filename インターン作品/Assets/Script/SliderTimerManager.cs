@@ -28,8 +28,8 @@ public class SliderTimerManager : MonoBehaviour
         Vector3 thisPosition = this.GetComponent<RectTransform>().position;
         Debug.Log(thisPosition);
         Vector3 thisPositionZero = new Vector3(
-            -this.GetComponent<RectTransform>().offsetMax.x ,
-            thisPosition.y, 
+            -this.GetComponent<RectTransform>().offsetMax.x,
+            thisPosition.y,
             thisPosition.z);
         float thisScaleWidth = Screen.width + this.GetComponent<RectTransform>().offsetMax.x * 2;
 
@@ -54,10 +54,10 @@ public class SliderTimerManager : MonoBehaviour
 
     void Update()
     {
-        if(Time.timeScale == 0)
+        if (Time.timeScale == 0)
         {
-            timeSlider.value = timeSlider.maxValue;
-            time = countDownMax;
+            //timeSlider.value = timeSlider.maxValue;
+            //time = countDownMax;
 
         }
     }
@@ -69,12 +69,48 @@ public class SliderTimerManager : MonoBehaviour
         if (!isCountTimer)
         {
             time -= Time.deltaTime;//毎フレームの時間を減算
+            if (time <= timeStarPoint3)
+            {
+                panelStarPoint3.sizeDelta = Vector2.zero;
+            }
+            if (time <= timeStarPoint2)
+            {
+                panelStarPoint2.sizeDelta = Vector2.zero;
+            }
+            if (time <= timeStarPoint1)
+            {
+                panelStarPoint1.sizeDelta = Vector2.zero;
+            }
         }
     }
 
     public float GetTime()
     {
         return time;
+    }
+    public float GetClearTime()
+    {
+        return countDownMax - time;
+    }
+
+    public int GetGrade()
+    {
+        if (time >= timeStarPoint3)
+        {
+            return 3;
+        }
+        else if (time >= timeStarPoint2)
+        {
+            return 2;
+        }
+        else if (time >= timeStarPoint1)
+        {
+            return 1;
+        }
+        else
+        {
+            return 0;
+        }
     }
 
     //タイマーストップ

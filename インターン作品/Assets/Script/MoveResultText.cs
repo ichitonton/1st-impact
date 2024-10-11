@@ -35,7 +35,24 @@ public class MoveResultText : MonoBehaviour
                 timer.StopTimer();
 
                 resultText.text = successMessage + "\n";
-                resultText.text += "残り時間：" + timer.GetTime().ToString("F3");
+                resultText.text += "CleatTime：" + timer.GetClearTime().ToString("F3") + "\n";
+
+                if (timer.GetGrade() == 3)
+                {
+                    resultText.text += "★★★";
+                }
+                if (timer.GetGrade() == 2)
+                {
+                    resultText.text += "★★☆";
+                }
+                if (timer.GetGrade() == 1)
+                {
+                    resultText.text += "☆★☆";
+                }
+                if (timer.GetGrade() == 0)
+                {
+                    resultText.text += "☆☆☆";
+                }
             }
 
             //時間内にゴールできなかったら
