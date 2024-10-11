@@ -203,6 +203,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 978709648dc4ff74895e590f978f7a60, type: 3}
+--- !u!1 &392496040 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7019777889062899367, guid: 5d885ca13181f0a42871122ea62d7815, type: 3}
+  m_PrefabInstance: {fileID: 3811733430965423798}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &843445040
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1183,10 +1188,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2394923185690689988, guid: 5d885ca13181f0a42871122ea62d7815, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Stage2
+      objectReference: {fileID: 0}
     - target: {fileID: 6676201108106187785, guid: 5d885ca13181f0a42871122ea62d7815, type: 3}
       propertyPath: goal
       value: 
       objectReference: {fileID: 128031002}
+    - target: {fileID: 6676201108106187785, guid: 5d885ca13181f0a42871122ea62d7815, type: 3}
+      propertyPath: nextSceneButton
+      value: 
+      objectReference: {fileID: 392496040}
     - target: {fileID: 7158918999946688275, guid: 5d885ca13181f0a42871122ea62d7815, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -1283,7 +1296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4554523205253043273, guid: 5f847b45b3a483f4d9c3a89837600a89, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 4554523205253043273, guid: 5f847b45b3a483f4d9c3a89837600a89, type: 3}
       propertyPath: m_LocalRotation.w

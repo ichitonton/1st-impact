@@ -9,6 +9,7 @@ public class MoveResultText : MonoBehaviour
     public Text resultText;
     public GoalManager goal;
     public SliderTimerManager timer;
+    public GameObject nextSceneButton;
     public float moveSpeed;//ゴール判定と同時に流れてくる→
     private bool isDecisionResult = false;
     public string successMessage;
@@ -18,6 +19,7 @@ public class MoveResultText : MonoBehaviour
     void Start()
     {
         trans = GetComponent<Transform>();
+        nextSceneButton.SetActive(false);
     }
 
     // Update is called once per frame
@@ -53,6 +55,8 @@ public class MoveResultText : MonoBehaviour
                 {
                     resultText.text += "☆☆☆";
                 }
+                //クリアなら
+                nextSceneButton.SetActive(true);
             }
 
             //時間内にゴールできなかったら

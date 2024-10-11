@@ -310,7 +310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   water: {fileID: 0}
-  buoyancy: 100
+  buoyancy: 150
   moveSpeed: 0
   addForceDown: 0
 --- !u!114 &2890794350576779642
