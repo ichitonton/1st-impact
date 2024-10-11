@@ -42,14 +42,14 @@ public class MoveResultText : MonoBehaviour
 
                 if (timer.GetGrade() == 3)
                 {
-                    PlayerPrefs.SetInt(thisSceneName, 3);
+                    PlayerPrefs.SetInt(thisSceneName, 4);
                     resultText.text += "ÅöÅöÅö";
                 }
                 if (timer.GetGrade() == 2)
                 {
                     if(PlayerPrefs.GetInt(thisSceneName) < 2)
                     {
-                        PlayerPrefs.SetInt(thisSceneName, 2);
+                        PlayerPrefs.SetInt(thisSceneName, 3);
                     }
                     resultText.text += "ÅöÅöÅô";
                 }
@@ -57,7 +57,7 @@ public class MoveResultText : MonoBehaviour
                 {
                     if (PlayerPrefs.GetInt(thisSceneName) < 1)
                     {
-                        PlayerPrefs.SetInt(thisSceneName, 1);
+                        PlayerPrefs.SetInt(thisSceneName, 2);
                     }
                     resultText.text += "ÅôÅöÅô";
                 }
@@ -65,7 +65,7 @@ public class MoveResultText : MonoBehaviour
                 {
                     if (PlayerPrefs.GetInt(thisSceneName) < 0)
                     {
-                        PlayerPrefs.SetInt(thisSceneName, 0);
+                        PlayerPrefs.SetInt(thisSceneName, 1);
                     }
                     resultText.text += "ÅôÅôÅô";
                 }

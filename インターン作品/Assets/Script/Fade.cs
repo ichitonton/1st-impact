@@ -23,6 +23,8 @@ public class Fade : MonoBehaviour
         fadeOut = false;
         goNextScene = false;
         Time.timeScale = 0;
+
+        gameObject.SetActive(true);
     }
 
     // Update is called once per frame
