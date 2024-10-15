@@ -1295,9 +1295,21 @@ PrefabInstance:
       propertyPath: countDownMax
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 2379049514854992233, guid: 5d885ca13181f0a42871122ea62d7815, type: 3}
+      propertyPath: timeStarPoint1
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379049514854992233, guid: 5d885ca13181f0a42871122ea62d7815, type: 3}
+      propertyPath: timeStarPoint2
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379049514854992233, guid: 5d885ca13181f0a42871122ea62d7815, type: 3}
+      propertyPath: timeStarPoint3
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 2390739686982001945, guid: 5d885ca13181f0a42871122ea62d7815, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Stage2
+      value: Stage3
       objectReference: {fileID: 0}
     - target: {fileID: 2394923185690689988, guid: 5d885ca13181f0a42871122ea62d7815, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
@@ -1321,7 +1333,7 @@ PrefabInstance:
       objectReference: {fileID: 128031002}
     - target: {fileID: 6676201108106187785, guid: 5d885ca13181f0a42871122ea62d7815, type: 3}
       propertyPath: thisSceneName
-      value: Stage2
+      value: Stage3
       objectReference: {fileID: 0}
     - target: {fileID: 6676201108106187785, guid: 5d885ca13181f0a42871122ea62d7815, type: 3}
       propertyPath: nextSceneButton
