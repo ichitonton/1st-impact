@@ -1163,6 +1163,10 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 1.6
       objectReference: {fileID: 0}
+    - target: {fileID: 1108677946983501210, guid: 5f847b45b3a483f4d9c3a89837600a89, type: 3}
+      propertyPath: m_GravityScale
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3534637176306828412, guid: 5f847b45b3a483f4d9c3a89837600a89, type: 3}
       propertyPath: camera
       value: 
@@ -1221,7 +1225,7 @@ PrefabInstance:
       objectReference: {fileID: 195580882}
     - target: {fileID: 6772397441173198640, guid: 5f847b45b3a483f4d9c3a89837600a89, type: 3}
       propertyPath: buoyancy
-      value: 22
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6772397441173198640, guid: 5f847b45b3a483f4d9c3a89837600a89, type: 3}
       propertyPath: addForceDown
