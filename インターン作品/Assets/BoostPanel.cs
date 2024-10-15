@@ -27,10 +27,11 @@ public class BoostPanel : MonoBehaviour
         if(collision.gameObject == dack)
         {
             //Debug.Log("boost!!");
-            Debug.Log(trans.eulerAngles.z);
             power.x = -Mathf.Sin(trans.eulerAngles.z *Mathf.Deg2Rad) * boostPower;
             power.y = Mathf.Cos(trans.eulerAngles.z * Mathf.Deg2Rad) * boostPower;
 
+            Debug.Log(trans.eulerAngles.z);
+            Debug.Log(power);
             Debug.Log(Mathf.Sin(trans.eulerAngles.z * Mathf.Deg2Rad));
             dackRigid.AddForce(power, ForceMode2D.Force);
         }
