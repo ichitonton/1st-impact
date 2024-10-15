@@ -6,17 +6,18 @@ public class ActiveButtonManager : MonoBehaviour
 {
     public string thisButtonBeforStageName;
     public string thisButtoStageName;
+    public GameObject stageCloseObj;
     public GameObject star1;
     public GameObject star2;
     public GameObject star3;
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.SetActive(false);
+        stageCloseObj.SetActive(true);
         PlayerPrefs.SetInt("Stage0", 3);
         if (PlayerPrefs.GetInt(thisButtonBeforStageName) >= 1)
         {
-            gameObject.SetActive(true);
+            stageCloseObj.SetActive(false);
         }
 
         star1.SetActive(false);
