@@ -32,10 +32,18 @@ public class PhysicsWater : MonoBehaviour
         {
             //Debug.Log("tatch water");
 
-            rigid.gravityScale = 0.5f;
-            
+            rigid.gravityScale = 1.0f;
+
             //êÖíÔçR
-            rigid.velocity *= 0.98f;
+            if (rigid.velocity.y < 0)
+            {
+                rigid.velocity *= 0.98f;
+            }
+            else if (rigid.velocity.y > 0)
+            {
+                rigid.velocity = new Vector2(rigid.velocity.x * 0.98f, rigid.velocity.y * 1.01f);
+
+            }
 
             //è„å¸Ç´Ç…â¡ë¨ìxÇâ¡Ç¶ÇÈ(ïÇóÕ)
             Vector2 force = new Vector2(0.0f, buoyancy);
@@ -45,7 +53,7 @@ public class PhysicsWater : MonoBehaviour
         }
         else
         {
-            rigid.gravityScale = 2.0f;
+            rigid.gravityScale = 2.5f;
         }
     }
 

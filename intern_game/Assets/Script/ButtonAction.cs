@@ -1,7 +1,7 @@
 using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
+//using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -47,9 +47,9 @@ public class ButtonAction : MonoBehaviour
         {
             Debug.Log("Press the end button");
 
-            UnityEditor.EditorApplication.isPlaying = false;
+            //UnityEditor.EditorApplication.isPlaying = false;
 
-            //Application.Quit();
+            Application.Quit();
         }
     }
 

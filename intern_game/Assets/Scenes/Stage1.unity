@@ -1106,6 +1106,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonResetStage
       objectReference: {fileID: 0}
+    - target: {fileID: 4600896785207976366, guid: 5d885ca13181f0a42871122ea62d7815, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0061035156
+      objectReference: {fileID: 0}
     - target: {fileID: 5393970793854276900, guid: 5d885ca13181f0a42871122ea62d7815, type: 3}
       propertyPath: m_Name
       value: SliderTimer
@@ -1130,6 +1134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7783782634622197147, guid: 5d885ca13181f0a42871122ea62d7815, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8720198284742540888, guid: 5d885ca13181f0a42871122ea62d7815, type: 3}
       propertyPath: DackObj
       value: 
@@ -1151,6 +1159,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1108677946983501210, guid: 5f847b45b3a483f4d9c3a89837600a89, type: 3}
+      propertyPath: m_Mass
+      value: 1.6
+      objectReference: {fileID: 0}
     - target: {fileID: 3534637176306828412, guid: 5f847b45b3a483f4d9c3a89837600a89, type: 3}
       propertyPath: camera
       value: 
@@ -1161,7 +1173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4554523205253043273, guid: 5f847b45b3a483f4d9c3a89837600a89, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.54
+      value: 0.527
       objectReference: {fileID: 0}
     - target: {fileID: 4554523205253043273, guid: 5f847b45b3a483f4d9c3a89837600a89, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1207,6 +1219,14 @@ PrefabInstance:
       propertyPath: water
       value: 
       objectReference: {fileID: 195580882}
+    - target: {fileID: 6772397441173198640, guid: 5f847b45b3a483f4d9c3a89837600a89, type: 3}
+      propertyPath: buoyancy
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 6772397441173198640, guid: 5f847b45b3a483f4d9c3a89837600a89, type: 3}
+      propertyPath: addForceDown
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3534637176306828412, guid: 5f847b45b3a483f4d9c3a89837600a89, type: 3}
     m_RemovedGameObjects: []
