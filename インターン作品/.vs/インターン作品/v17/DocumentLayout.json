@@ -1,0 +1,180 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0C186E8B-D3BD-9B4D-6D27-811CD71EB9E0}|Assembly-CSharp.csproj|c:\\users\\\u5713\u5730\u3000\u90FD\u6597\\desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\assets\\script\\slidertimermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C186E8B-D3BD-9B4D-6D27-811CD71EB9E0}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\slidertimermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C186E8B-D3BD-9B4D-6D27-811CD71EB9E0}|Assembly-CSharp.csproj|c:\\users\\\u5713\u5730\u3000\u90FD\u6597\\desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\assets\\script\\moveplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C186E8B-D3BD-9B4D-6D27-811CD71EB9E0}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\moveplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C186E8B-D3BD-9B4D-6D27-811CD71EB9E0}|Assembly-CSharp.csproj|C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\assets\\script\\startcountdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C186E8B-D3BD-9B4D-6D27-811CD71EB9E0}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\startcountdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C186E8B-D3BD-9B4D-6D27-811CD71EB9E0}|Assembly-CSharp.csproj|C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\assets\\script\\moveresulttext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C186E8B-D3BD-9B4D-6D27-811CD71EB9E0}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\moveresulttext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C186E8B-D3BD-9B4D-6D27-811CD71EB9E0}|Assembly-CSharp.csproj|C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\assets\\script\\buttonaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C186E8B-D3BD-9B4D-6D27-811CD71EB9E0}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\buttonaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\Assets\\ResetPositionObstacle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\ResetPositionObstacle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C186E8B-D3BD-9B4D-6D27-811CD71EB9E0}|Assembly-CSharp.csproj|C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\assets\\script\\moveobstacle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C186E8B-D3BD-9B4D-6D27-811CD71EB9E0}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\moveobstacle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\Assets\\Script\\FadeManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\FadeManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C186E8B-D3BD-9B4D-6D27-811CD71EB9E0}|Assembly-CSharp.csproj|C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\assets\\script\\fade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C186E8B-D3BD-9B4D-6D27-811CD71EB9E0}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\fade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 106,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SliderTimerManager.cs",
+              "DocumentMoniker": "C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\Assets\\Script\\SliderTimerManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\SliderTimerManager.cs",
+              "ToolTip": "C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\Assets\\Script\\SliderTimerManager.cs",
+              "RelativeToolTip": "Assets\\Script\\SliderTimerManager.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAADwvyEAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T06:56:47.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StartCountDown.cs",
+              "DocumentMoniker": "C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\Assets\\Script\\StartCountDown.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\StartCountDown.cs",
+              "ToolTip": "C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\Assets\\Script\\StartCountDown.cs",
+              "RelativeToolTip": "Assets\\Script\\StartCountDown.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T07:43:45.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MovePlayer.cs",
+              "DocumentMoniker": "C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\Assets\\Script\\MovePlayer.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\MovePlayer.cs",
+              "ToolTip": "C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\Assets\\Script\\MovePlayer.cs",
+              "RelativeToolTip": "Assets\\Script\\MovePlayer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T07:23:08.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MoveResultText.cs",
+              "DocumentMoniker": "C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\Assets\\Script\\MoveResultText.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\MoveResultText.cs",
+              "ToolTip": "C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\Assets\\Script\\MoveResultText.cs",
+              "RelativeToolTip": "Assets\\Script\\MoveResultText.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAwDIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T06:17:55.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MoveObstacle.cs",
+              "DocumentMoniker": "C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\Assets\\Script\\MoveObstacle.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\MoveObstacle.cs",
+              "ToolTip": "C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\Assets\\Script\\MoveObstacle.cs",
+              "RelativeToolTip": "Assets\\Script\\MoveObstacle.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T07:20:54.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ResetPositionObstacle.cs",
+              "DocumentMoniker": "C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\Assets\\ResetPositionObstacle.cs",
+              "RelativeDocumentMoniker": "Assets\\ResetPositionObstacle.cs",
+              "ToolTip": "C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\Assets\\ResetPositionObstacle.cs",
+              "RelativeToolTip": "Assets\\ResetPositionObstacle.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T07:18:29.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Fade.cs",
+              "DocumentMoniker": "C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\Assets\\Script\\Fade.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Fade.cs",
+              "ToolTip": "C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\Assets\\Script\\Fade.cs",
+              "RelativeToolTip": "Assets\\Script\\Fade.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T08:19:25.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FadeManager.cs",
+              "DocumentMoniker": "C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\Assets\\Script\\FadeManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\FadeManager.cs",
+              "ToolTip": "C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\Assets\\Script\\FadeManager.cs",
+              "RelativeToolTip": "Assets\\Script\\FadeManager.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:58:31.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ButtonAction.cs",
+              "DocumentMoniker": "C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\Assets\\Script\\ButtonAction.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\ButtonAction.cs",
+              "ToolTip": "C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\\u30A4\u30F3\u30BF\u30FC\u30F3\u4F5C\u54C1\\Assets\\Script\\ButtonAction.cs",
+              "RelativeToolTip": "Assets\\Script\\ButtonAction.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAwA4AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T06:53:29.172Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
