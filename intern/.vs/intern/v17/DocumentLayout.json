@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\intern\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{55F21769-BFE3-8C09-47C0-E8F4F75BE436}|Assembly-CSharp.csproj|c:\\users\\\u5713\u5730\u3000\u90FD\u6597\\desktop\\intern\\intern\\assets\\script\\draganddrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55F21769-BFE3-8C09-47C0-E8F4F75BE436}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\draganddrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DragAndDrop.cs",
+              "DocumentMoniker": "C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\intern\\Assets\\Script\\DragAndDrop.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\DragAndDrop.cs",
+              "ToolTip": "C:\\Users\\\u5713\u5730\u3000\u90FD\u6597\\Desktop\\intern\\intern\\Assets\\Script\\DragAndDrop.cs",
+              "RelativeToolTip": "Assets\\Script\\DragAndDrop.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T07:00:19.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
