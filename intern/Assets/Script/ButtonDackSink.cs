@@ -15,7 +15,7 @@ public class ButtonDackSink : MonoBehaviour
             if (buttonDownFlag)
             {
                 Debug.Log("Hold");
-                DackObj.GetComponent<PhysicsWater>().Sink();
+                //DackObj.GetComponent<PhysicsWater>().Sink();
             }
         }
         

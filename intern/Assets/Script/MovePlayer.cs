@@ -6,9 +6,16 @@ public class MovePlayer : MonoBehaviour
     public float moveAngularBegin = 100.0f;
     public float addForcePower = 3.0f;
     public float addVelocityAngular = 3.0f;
+    public float sinkPowerYMax = 13.0f;
+    public float sinkPowerYAdjustment = 0.01f;
     Transform trans;
     Rigidbody2D rigid;
     public Fade fade;
+    private float tapPositionY;
+    private float oldTapPositionY;
+    private float sinkPowerY;
+    private float sinkPowerYDecision;
+    public Camera mainCamera;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +40,38 @@ public class MovePlayer : MonoBehaviour
         if (trans.rotation.z >= 0.0f)
         {
             rigid.angularVelocity -= addVelocityAngular;
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        { 
+            sinkPowerY = 0.0f;
+        }
+        if (Input.GetMouseButton(0))
+        {
+            tapPositionY = Input.mousePosition.y;
+
+            if (tapPositionY - oldTapPositionY > sinkPowerY)
+            {
+                sinkPowerY = tapPositionY - oldTapPositionY;
+            }
+
+            //Debug.Log("tapPosition" + tapPositionY);
+           // Debug.Log("oldTapPosition" + oldTapPositionY);
+            //Debug.Log("sinkPower" + sinkVelocityY);
+            oldTapPositionY = Input.mousePosition.y;//1フレーム前のタップポジション
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            if (sinkPowerY * sinkPowerYAdjustment > sinkPowerYMax)
+            {
+                sinkPowerYDecision = sinkPowerYMax;
+            }
+            else if (sinkPowerY * sinkPowerYAdjustment <= sinkPowerYMax)
+            {
+                sinkPowerYDecision = sinkPowerY * sinkPowerYAdjustment;
+            }
+            gameObject.GetComponent<PhysicsWater>().Sink(sinkPowerYDecision);
+            //Debug.Log("sinkPower" + sinkPowerY);
         }
     }
 }

@@ -278,9 +278,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObjectSoapBottle (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8534988307975483059, guid: 4ff0261ee0fa1654195bf1ff45f43668, type: 3}
+      propertyPath: m_Size.x
+      value: 0.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534988307975483059, guid: 4ff0261ee0fa1654195bf1ff45f43668, type: 3}
+      propertyPath: m_Size.y
+      value: 7.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785112888036730783, guid: 4ff0261ee0fa1654195bf1ff45f43668, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 8785112888036730783, guid: 4ff0261ee0fa1654195bf1ff45f43668, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.7
+      value: -2.83
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1269,12 +1281,20 @@ PrefabInstance:
       value: Water
       objectReference: {fileID: 0}
     - target: {fileID: 8539711587299157676, guid: 96929eb9aea30b0498ce7f92ebfd4289, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8493995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8539711587299157676, guid: 96929eb9aea30b0498ce7f92ebfd4289, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.53436726
+      objectReference: {fileID: 0}
+    - target: {fileID: 8539711587299157676, guid: 96929eb9aea30b0498ce7f92ebfd4289, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.6
+      value: 20.9367
       objectReference: {fileID: 0}
     - target: {fileID: 8539711587299157676, guid: 96929eb9aea30b0498ce7f92ebfd4289, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.7944
+      value: -3.23
       objectReference: {fileID: 0}
     - target: {fileID: 8539711587299157676, guid: 96929eb9aea30b0498ce7f92ebfd4289, type: 3}
       propertyPath: m_LocalPosition.z

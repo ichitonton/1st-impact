@@ -96,8 +96,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\Script\ResetPositionObstacle.cs" />
     <Compile Include="Assets\Script\MovePlayer.cs" />
-    <Compile Include="Assets\Script\StartCountDown.cs" />
     <Compile Include="Assets\Script\MoveCamera.cs" />
+    <Compile Include="Assets\Script\StartCountDown.cs" />
     <Compile Include="Assets\Script\Fade.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />

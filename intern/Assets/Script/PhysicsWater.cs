@@ -57,10 +57,10 @@ public class PhysicsWater : MonoBehaviour
         }
     }
 
-    public void Sink()
+    public void Sink(float sinkForce)
     {
         //‰ºŒü‚«‚É‰Á‘¬“x‚ð‰Á‚¦‚é
-        Vector2 force = new Vector2(0.0f, -addForceDown);
-        rigid.AddForce(force, ForceMode2D.Force);
+        Vector2 force = new Vector2(0.0f, -sinkForce);
+        rigid.AddForce(force, ForceMode2D.Impulse);
     }
 }
