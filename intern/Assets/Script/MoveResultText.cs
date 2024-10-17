@@ -16,11 +16,17 @@ public class MoveResultText : MonoBehaviour
     public string failureMessage;
     public float stopPositionX;
     public string thisSceneName;
+    public GameObject star1;
+    public GameObject star2;
+    public GameObject star3;
     // Start is called before the first frame update
     void Start()
     {
         trans = GetComponent<Transform>();
         nextSceneButton.SetActive(false);
+        star1.SetActive(false);
+        star2.SetActive(false);
+        star3.SetActive(false);
     }
 
     // Update is called once per frame
@@ -43,7 +49,10 @@ public class MoveResultText : MonoBehaviour
                 if (timer.GetGrade() == 3)
                 {
                     PlayerPrefs.SetInt(thisSceneName, 4);
-                    resultText.text += "ššš";
+                    //resultText.text += "ššš";
+                    star1.SetActive(true);
+                    star2.SetActive(true);
+                    star3.SetActive(true);
                 }
                 if (timer.GetGrade() == 2)
                 {
@@ -51,7 +60,9 @@ public class MoveResultText : MonoBehaviour
                     {
                         PlayerPrefs.SetInt(thisSceneName, 3);
                     }
-                    resultText.text += "šš™";
+                    //resultText.text += "šš™";
+                    star1.SetActive(true);
+                    star2.SetActive(true);
                 }
                 if (timer.GetGrade() == 1)
                 {
@@ -59,7 +70,8 @@ public class MoveResultText : MonoBehaviour
                     {
                         PlayerPrefs.SetInt(thisSceneName, 2);
                     }
-                    resultText.text += "™š™";
+                    //resultText.text += "™š™";
+                    star1.SetActive(true);
                 }
                 if (timer.GetGrade() == 0)
                 {
@@ -67,7 +79,7 @@ public class MoveResultText : MonoBehaviour
                     {
                         PlayerPrefs.SetInt(thisSceneName, 1);
                     }
-                    resultText.text += "™™™";
+                    //resultText.text += "™™™";
                 }
                 //ƒNƒŠƒA‚È‚ç
                 nextSceneButton.SetActive(true);
