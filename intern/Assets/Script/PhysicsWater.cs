@@ -41,7 +41,7 @@ public class PhysicsWater : MonoBehaviour
             }
             else if (rigid.velocity.y > 0)
             {
-                rigid.velocity = new Vector2(rigid.velocity.x * 0.98f, rigid.velocity.y * 1.01f);
+                rigid.velocity = new Vector2(rigid.velocity.x * 0.98f, rigid.velocity.y * 1.02f);
 
             }
 
@@ -61,6 +61,6 @@ public class PhysicsWater : MonoBehaviour
     {
         //‰ºŒü‚«‚É‰Á‘¬“x‚ð‰Á‚¦‚é
         Vector2 force = new Vector2(0.0f, -sinkForce);
-        rigid.AddForce(force, ForceMode2D.Impulse);
+        rigid.AddForce(force, ForceMode2D.Force);
     }
 }

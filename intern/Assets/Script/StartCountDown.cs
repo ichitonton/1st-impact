@@ -11,11 +11,18 @@ public class StartCountDown : MonoBehaviour
     public float countDownSecond;
     public float nowFrameParSecond = 60;
     private float countFrame = 0;
+    public GameObject CountDown3;
+    public GameObject CountDown2;
+    public GameObject CountDown1;
+    public GameObject BlockTatchPanel;
     // Start is called before the first frame update
     void Start()
     {
         text = gameObject.GetComponent<Text>();
-
+        CountDown3.SetActive(false);
+        CountDown2.SetActive(false);
+        CountDown1.SetActive(false);
+        BlockTatchPanel.SetActive(true);
     }
 
     // Update is called once per frame
@@ -34,16 +41,34 @@ public class StartCountDown : MonoBehaviour
                 countFrame = 0;
                 //countDownSecond -= Time.deltaTime;
                 countDownSecond -= 1;//ŽžŠÔ‚ðŽ~‚ß‚Ä‚¢‚é‚½‚ß‚±‚Á‚¿‚ÅƒJƒEƒ“ƒg
-                if (countDownSecond > 0)
+                if (countDownSecond > 2)
                 {
-                    text.text = countDownSecond.ToString("F0");
+                    CountDown3.SetActive(true);
+                    CountDown2.SetActive(false);
+                    CountDown1.SetActive(false);
+                }
+                else if (countDownSecond > 1)
+                {
+                    CountDown3.SetActive(false);
+                    CountDown2.SetActive(true);
+                    CountDown1.SetActive(false);
+                }
+                else if (countDownSecond > 0)
+                {
+                    CountDown3.SetActive(false);
+                    CountDown2.SetActive(false);
+                    CountDown1.SetActive(true);
                 }
                 else if (countDownSecond > -1)
                 {
+                    CountDown3.SetActive(false);
+                    CountDown2.SetActive(false);
+                    CountDown1.SetActive(false);
                     text.text = "START";
                 }
                 else
                 {
+                    BlockTatchPanel.SetActive(false);
                     text.text = "";
                     Time.timeScale = 1;
                 }

@@ -6,16 +6,21 @@ public class MovePlayer : MonoBehaviour
     public float moveAngularBegin = 100.0f;
     public float addForcePower = 3.0f;
     public float addVelocityAngular = 3.0f;
-    public float sinkPowerYMax = 13.0f;
-    public float sinkPowerYAdjustment = 0.01f;
+   // public float sinkPowerYMax = 13.0f;
+   // public float sinkPowerYAdjustment = 0.01f;
     Transform trans;
     Rigidbody2D rigid;
     public Fade fade;
     private float tapPositionY;
     private float oldTapPositionY;
-    private float sinkPowerY;
-    private float sinkPowerYDecision;
-    public Camera mainCamera;
+    //private float sinkPowerY;
+    //private float sinkPowerYDecision;
+    //public Camera mainCamera;
+    public SliderSink sliderSink;
+    public float sinkMax;
+    public float sinkMin;
+    private float valueDepth;
+    public float sinkPower;
 
     // Start is called before the first frame update
     void Start()
@@ -42,36 +47,49 @@ public class MovePlayer : MonoBehaviour
             rigid.angularVelocity -= addVelocityAngular;
         }
 
-        if (Input.GetMouseButtonDown(0))
-        { 
-            sinkPowerY = 0.0f;
-        }
-        if (Input.GetMouseButton(0))
+        valueDepth = (sinkMax - sinkMin) * sliderSink.GetSliderValue();//沈めたい深さ
+        if(sliderSink.GetSliderValue() >= 0.02f)
         {
-            tapPositionY = Input.mousePosition.y;
-
-            if (tapPositionY - oldTapPositionY > sinkPowerY)
+            rigid.velocity =new Vector2(rigid.velocityX, rigid.velocityY * 0.98f);
+            rigid.position = new Vector2(rigid.position.x, rigid.position.y + (valueDepth - trans.position.y) * 0.025f);
+            if (trans.position.y > valueDepth)
             {
-                sinkPowerY = tapPositionY - oldTapPositionY;
+                gameObject.GetComponent<PhysicsWater>().Sink(sinkPower);
             }
 
-            //Debug.Log("tapPosition" + tapPositionY);
-           // Debug.Log("oldTapPosition" + oldTapPositionY);
-            //Debug.Log("sinkPower" + sinkVelocityY);
-            oldTapPositionY = Input.mousePosition.y;//1フレーム前のタップポジション
         }
-        if (Input.GetMouseButtonUp(0))
-        {
-            if (sinkPowerY * sinkPowerYAdjustment > sinkPowerYMax)
-            {
-                sinkPowerYDecision = sinkPowerYMax;
-            }
-            else if (sinkPowerY * sinkPowerYAdjustment <= sinkPowerYMax)
-            {
-                sinkPowerYDecision = sinkPowerY * sinkPowerYAdjustment;
-            }
-            gameObject.GetComponent<PhysicsWater>().Sink(sinkPowerYDecision);
-            //Debug.Log("sinkPower" + sinkPowerY);
-        }
+
+
+        //if (Input.GetMouseButtonDown(0))
+        //{ 
+        //    sinkPowerY = 0.0f;
+        //}
+        //if (Input.GetMouseButton(0))
+        //{
+        //    tapPositionY = Input.mousePosition.y;
+
+        //    if (tapPositionY - oldTapPositionY > sinkPowerY)
+        //    {
+        //        sinkPowerY = tapPositionY - oldTapPositionY;
+        //    }
+
+        //    //Debug.Log("tapPosition" + tapPositionY);
+        //   // Debug.Log("oldTapPosition" + oldTapPositionY);
+        //    //Debug.Log("sinkPower" + sinkVelocityY);
+        //    oldTapPositionY = Input.mousePosition.y;//1フレーム前のタップポジション
+        //}
+        //if (Input.GetMouseButtonUp(0))
+        //{
+        //    if (sinkPowerY * sinkPowerYAdjustment > sinkPowerYMax)
+        //    {
+        //        sinkPowerYDecision = sinkPowerYMax;
+        //    }
+        //    else if (sinkPowerY * sinkPowerYAdjustment <= sinkPowerYMax)
+        //    {
+        //        sinkPowerYDecision = sinkPowerY * sinkPowerYAdjustment;
+        //    }
+        //    gameObject.GetComponent<PhysicsWater>().Sink(sinkPowerYDecision);
+        //    //Debug.Log("sinkPower" + sinkPowerY);
+        //}
     }
 }
