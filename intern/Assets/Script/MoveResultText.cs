@@ -44,7 +44,7 @@ public class MoveResultText : MonoBehaviour
                 timer.StopTimer();
 
                 resultText.text = successMessage + "\n";
-                resultText.text += "CleatTimeÅF" + timer.GetClearTime().ToString("F3") + "\n";
+                resultText.text += "Clear TimeÅF" + timer.GetClearTime().ToString("F3") + "\n";
 
                 if (timer.GetGrade() == 3)
                 {
