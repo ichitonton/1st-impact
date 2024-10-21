@@ -37,11 +37,11 @@ public class PhysicsWater : MonoBehaviour
             //êÖíÔçR
             if (rigid.velocity.y < 0)
             {
-                rigid.velocity *= 0.98f;
+                rigid.velocity *= 0.99f;
             }
             else if (rigid.velocity.y > 0)
             {
-                rigid.velocity = new Vector2(rigid.velocity.x * 0.98f, rigid.velocity.y * 1.02f);
+                rigid.velocity = new Vector2(rigid.velocity.x * 0.99f, rigid.velocity.y * 1.02f);
 
             }
 

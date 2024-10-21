@@ -31,7 +31,7 @@ public class BoostPanel : MonoBehaviour
             power.y = Mathf.Cos(trans.eulerAngles.z * Mathf.Deg2Rad) * boostPower;
 
            // Debug.Log(trans.eulerAngles.z);
-           // Debug.Log(power);
+            Debug.Log(power);
            // Debug.Log(Mathf.Sin(trans.eulerAngles.z * Mathf.Deg2Rad));
             dackRigid.AddForce(power, ForceMode2D.Force);
         }
