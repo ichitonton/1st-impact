@@ -10,11 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2670211451487510100}
   - component: {fileID: 4844355887399237867}
-  - component: {fileID: 910056627154694416}
   - component: {fileID: 6108824988479687205}
-  - component: {fileID: 911183956466507598}
+  - component: {fileID: 7310555906586790427}
   m_Layer: 0
-  m_Name: ObjectBin
+  m_Name: ObjectJouro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4977199476649994696, guid: 6620b3e425659474bb72a95eeecef2f5, type: 3}
+  m_Sprite: {fileID: -4345841028452677199, guid: 8005cde3b84900148914bb56abe0c9b9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -89,52 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &910056627154694416
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 398273031721017168}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.44, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.01, y: 37.971592}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 4.07, y: 36.84}
-  m_EdgeRadius: 0
 --- !u!50 &6108824988479687205
 Rigidbody2D:
   serializedVersion: 4
@@ -151,7 +104,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: c33bda6a0b9d32e4f88af87d3f3f59e2, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -162,8 +115,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!61 &911183956466507598
-BoxCollider2D:
+--- !u!68 &7310555906586790427
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -196,15 +149,40 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -6.2}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.01, y: 37.971592}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.1, y: 14.89}
-  m_EdgeRadius: 1.08
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.1
+  m_Points:
+  - {x: -12.64, y: 1.2}
+  - {x: -12.07, y: 3.26}
+  - {x: -9.98, y: 4.69}
+  - {x: -9.33, y: 3.88}
+  - {x: -10.25, y: 2.51}
+  - {x: -8.14, y: 0.11}
+  - {x: -5.41, y: -1.53}
+  - {x: -3.98, y: 2.81}
+  - {x: -1.15, y: 5.01}
+  - {x: 1.85, y: 5.79}
+  - {x: 4.21, y: 5.36}
+  - {x: 5.96, y: 7.3}
+  - {x: 7.95, y: 7.5}
+  - {x: 10.17, y: 6.2}
+  - {x: 12.33, y: 3.6}
+  - {x: 12.71, y: 0.97}
+  - {x: 11.48, y: -1.5}
+  - {x: 9.91, y: -1.67}
+  - {x: 9.41, y: -4.94}
+  - {x: 8.2, y: -7.57}
+  - {x: 6.25, y: -7.58}
+  - {x: 6.12, y: -6.42}
+  - {x: -0.88, y: -6.01}
+  - {x: -1.23, y: -7.19}
+  - {x: -3.64, y: -6.98}
+  - {x: -5.16, y: -3.79}
+  - {x: -7.45, y: -2.89}
+  - {x: -9.39, y: -1.47}
+  - {x: -11.12, y: 1.48}
+  - {x: -12.43, y: 1.11}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0

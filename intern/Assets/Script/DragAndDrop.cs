@@ -6,11 +6,12 @@ public class DragAndDrop : MonoBehaviour
 {
     public Camera camera;
     private Vector3 Offset;
-    // Start is called before the first frame update
-    //void Start()
-    //{
-
-    //}
+    private Rigidbody2D rigid;
+    //Start is called before the first frame update
+    void Start()
+    {
+        rigid = GetComponent<Rigidbody2D>();
+    }
 
     //// Update is called once per frame
     //void Update()
@@ -24,7 +25,13 @@ public class DragAndDrop : MonoBehaviour
     private void OnMouseDrag()
     {
         //Debug.Log("drag");
-        transform.position = GetMousePos() + Offset;
+        rigid.position = GetMousePos() + Offset;
+        rigid.gravityScale = 0.0f;
+    }
+    private void OnMouseUp()
+    {
+        rigid.gravityScale = 2.0f;
+        //gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
     }
     private Vector3 GetMousePos()
     {
