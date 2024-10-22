@@ -128,7 +128,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.349999, y: 5.9302487}
+    oldSize: {x: 10.2699995, y: 5.9302487}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -176,9 +176,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   water: {fileID: 0}
-  buoyancy: 350
+  buoyancy: 450
   moveSpeed: 0
   addForceDown: 0
+  upForceMagnification: 0.99
+  douwnForceMagnification: 0.99
+  inWaterGravityScale: 1
+  outWaterGravityScale: 1
 --- !u!114 &158720917840602614
 MonoBehaviour:
   m_ObjectHideFlags: 0

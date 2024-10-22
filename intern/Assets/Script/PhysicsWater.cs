@@ -10,11 +10,15 @@ public class PhysicsWater : MonoBehaviour
     public float moveSpeed = 1.0f;
     public float addForceDown = 10.0f;
     float distansFromDefault;
+    public float upForceMagnification = 1.0f;
+    public float douwnForceMagnification = 1.0f;
+    public float inWaterGravityScale = 1.0f;
+    public float outWaterGravityScale = 1.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        rigid = GetComponent<Rigidbody2D>();
+        rigid = gameObject.GetComponent<Rigidbody2D>();
 
     }
 
@@ -32,16 +36,16 @@ public class PhysicsWater : MonoBehaviour
         {
             //Debug.Log("tatch water");
 
-            rigid.gravityScale = 1.0f;
+            rigid.gravityScale = inWaterGravityScale;
 
             //êÖíÔçR
             if (rigid.velocity.y < 0)
             {
-                rigid.velocity *= 0.99f;
+                rigid.velocity = new Vector2(rigid.velocity.x * 0.99f, rigid.velocity.y * douwnForceMagnification);
             }
             else if (rigid.velocity.y > 0)
             {
-                rigid.velocity = new Vector2(rigid.velocity.x * 0.99f, rigid.velocity.y * 1.02f);
+                rigid.velocity = new Vector2(rigid.velocity.x * 0.99f, rigid.velocity.y * upForceMagnification);
 
             }
 
@@ -51,9 +55,15 @@ public class PhysicsWater : MonoBehaviour
             rigid.AddForce(force, ForceMode2D.Force);
 
         }
-        else
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        //êÖÇ∆ê⁄êGÇµÇƒÇ¢ÇΩÇÁ
+        if (collision.gameObject == water)
         {
-            rigid.gravityScale = 2.5f;
+            rigid.gravityScale = outWaterGravityScale;
+            Debug.Log("out water" + rigid.gravityScale);
         }
     }
 

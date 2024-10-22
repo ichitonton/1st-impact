@@ -50,7 +50,7 @@ public class MovePlayer : MonoBehaviour
         valueDepth = (sinkMax - sinkMin) * sliderSink.GetSliderValue();//’¾‚ß‚½‚¢[‚³
         if(sliderSink.GetSliderValue() >= 0.02f)
         {
-            rigid.velocity =new Vector2(rigid.velocityX, rigid.velocityY * 0.98f);
+            rigid.velocity =new Vector2(rigid.velocityX, rigid.velocityY * 0.99f);
             rigid.position = new Vector2(rigid.position.x, rigid.position.y + (valueDepth - trans.position.y) * 0.025f);
             if (trans.position.y > valueDepth)
             {

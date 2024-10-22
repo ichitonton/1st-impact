@@ -176,9 +176,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   water: {fileID: 0}
-  buoyancy: 350
+  buoyancy: 450
   moveSpeed: 0
   addForceDown: 0
+  upForceMagnification: 0.99
+  douwnForceMagnification: 0.99
+  inWaterGravityScale: 1
+  outWaterGravityScale: 1
 --- !u!114 &2890794350576779642
 MonoBehaviour:
   m_ObjectHideFlags: 0

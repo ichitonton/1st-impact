@@ -491,7 +491,7 @@ PrefabInstance:
       objectReference: {fileID: 1163550530}
     - target: {fileID: 3483536003694874483, guid: a5c3999fcfcfbce46bc527822c1029d0, type: 3}
       propertyPath: buoyancy
-      value: 300
+      value: 450
       objectReference: {fileID: 0}
     - target: {fileID: 6748230795514632671, guid: a5c3999fcfcfbce46bc527822c1029d0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -754,7 +754,7 @@ PrefabInstance:
       objectReference: {fileID: 1163550530}
     - target: {fileID: 3483536003694874483, guid: a5c3999fcfcfbce46bc527822c1029d0, type: 3}
       propertyPath: buoyancy
-      value: 300
+      value: 450
       objectReference: {fileID: 0}
     - target: {fileID: 6748230795514632671, guid: a5c3999fcfcfbce46bc527822c1029d0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1299,6 +1299,10 @@ PrefabInstance:
       propertyPath: water
       value: 
       objectReference: {fileID: 1163550530}
+    - target: {fileID: 3491315143852488150, guid: 62c41b3d17cd71d40b18e09ff6962b06, type: 3}
+      propertyPath: buoyancy
+      value: 450
+      objectReference: {fileID: 0}
     - target: {fileID: 3830731661543942047, guid: 62c41b3d17cd71d40b18e09ff6962b06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.766151

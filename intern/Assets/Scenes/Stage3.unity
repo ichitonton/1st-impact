@@ -1026,7 +1026,7 @@ PrefabInstance:
       objectReference: {fileID: 428479035}
     - target: {fileID: 3483536003694874483, guid: a5c3999fcfcfbce46bc527822c1029d0, type: 3}
       propertyPath: buoyancy
-      value: 330
+      value: 450
       objectReference: {fileID: 0}
     - target: {fileID: 6748230795514632671, guid: a5c3999fcfcfbce46bc527822c1029d0, type: 3}
       propertyPath: m_LocalPosition.x

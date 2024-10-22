@@ -147,6 +147,10 @@ MonoBehaviour:
   buoyancy: 17
   moveSpeed: 1
   addForceDown: 11.5
+  upForceMagnification: 1.01
+  douwnForceMagnification: 0.99
+  inWaterGravityScale: 0.75
+  outWaterGravityScale: 1.15
 --- !u!114 &6312473571740500016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,6 +168,10 @@ MonoBehaviour:
   addForcePower: 1.5
   addVelocityAngular: 4
   fade: {fileID: 0}
+  sliderSink: {fileID: 0}
+  sinkMax: 0
+  sinkMin: 0
+  sinkPower: 0
 --- !u!58 &9186326503322498688
 CircleCollider2D:
   m_ObjectHideFlags: 0
