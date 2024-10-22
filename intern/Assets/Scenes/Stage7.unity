@@ -550,7 +550,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6748230795514632671, guid: a5c3999fcfcfbce46bc527822c1029d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.85
+      value: 0.32000005
       objectReference: {fileID: 0}
     - target: {fileID: 6748230795514632671, guid: a5c3999fcfcfbce46bc527822c1029d0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -835,7 +835,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6748230795514632671, guid: a5c3999fcfcfbce46bc527822c1029d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.32
+      value: -1.21
       objectReference: {fileID: 0}
     - target: {fileID: 6748230795514632671, guid: a5c3999fcfcfbce46bc527822c1029d0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -900,7 +900,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6748230795514632671, guid: a5c3999fcfcfbce46bc527822c1029d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.35
+      value: 1.8199999
       objectReference: {fileID: 0}
     - target: {fileID: 6748230795514632671, guid: a5c3999fcfcfbce46bc527822c1029d0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1759,6 +1759,14 @@ PrefabInstance:
     - target: {fileID: 7837069100896932525, guid: aea97bfcc81eeb945ac0be29dfbc7be7, type: 3}
       propertyPath: thisSceneName
       value: Stage7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8817435026803027243, guid: aea97bfcc81eeb945ac0be29dfbc7be7, type: 3}
+      propertyPath: timeStarPoint2
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 8817435026803027243, guid: aea97bfcc81eeb945ac0be29dfbc7be7, type: 3}
+      propertyPath: timeStarPoint3
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 8908313675178853039, guid: aea97bfcc81eeb945ac0be29dfbc7be7, type: 3}
       propertyPath: m_AnchorMax.y

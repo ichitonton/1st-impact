@@ -179,8 +179,8 @@ MonoBehaviour:
   buoyancy: 450
   moveSpeed: 0
   addForceDown: 0
-  upForceMagnification: 0.99
-  douwnForceMagnification: 0.99
+  upForceMagnification: 0.98
+  douwnForceMagnification: 0.98
   inWaterGravityScale: 1
   outWaterGravityScale: 1
 --- !u!114 &2890794350576779642

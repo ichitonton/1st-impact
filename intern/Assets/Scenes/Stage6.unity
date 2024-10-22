@@ -316,6 +316,14 @@ PrefabInstance:
       propertyPath: thisSceneName
       value: Stage6
       objectReference: {fileID: 0}
+    - target: {fileID: 8817435026803027243, guid: aea97bfcc81eeb945ac0be29dfbc7be7, type: 3}
+      propertyPath: timeStarPoint2
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 8817435026803027243, guid: aea97bfcc81eeb945ac0be29dfbc7be7, type: 3}
+      propertyPath: timeStarPoint3
+      value: 47
+      objectReference: {fileID: 0}
     - target: {fileID: 8908313675178853039, guid: aea97bfcc81eeb945ac0be29dfbc7be7, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -422,7 +430,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7597564608475666520, guid: 432ddf346a0434d479c3012100b9f9c4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.75
+      value: 9.965298
       objectReference: {fileID: 0}
     - target: {fileID: 7597564608475666520, guid: 432ddf346a0434d479c3012100b9f9c4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -495,7 +503,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6748230795514632671, guid: a5c3999fcfcfbce46bc527822c1029d0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.654702
+      value: 9.87
       objectReference: {fileID: 0}
     - target: {fileID: 6748230795514632671, guid: a5c3999fcfcfbce46bc527822c1029d0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1305,7 +1313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3830731661543942047, guid: 62c41b3d17cd71d40b18e09ff6962b06, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.766151
+      value: 11.97
       objectReference: {fileID: 0}
     - target: {fileID: 3830731661543942047, guid: 62c41b3d17cd71d40b18e09ff6962b06, type: 3}
       propertyPath: m_LocalPosition.y
