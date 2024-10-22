@@ -2070,11 +2070,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8817435026803027243, guid: aea97bfcc81eeb945ac0be29dfbc7be7, type: 3}
       propertyPath: timeStarPoint2
-      value: 20
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 8817435026803027243, guid: aea97bfcc81eeb945ac0be29dfbc7be7, type: 3}
       propertyPath: timeStarPoint3
-      value: 40
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 8908313675178853039, guid: aea97bfcc81eeb945ac0be29dfbc7be7, type: 3}
       propertyPath: m_AnchorMax.y

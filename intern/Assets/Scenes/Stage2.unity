@@ -415,8 +415,12 @@ PrefabInstance:
       value: Stage2
       objectReference: {fileID: 0}
     - target: {fileID: 8817435026803027243, guid: aea97bfcc81eeb945ac0be29dfbc7be7, type: 3}
+      propertyPath: timeStarPoint2
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8817435026803027243, guid: aea97bfcc81eeb945ac0be29dfbc7be7, type: 3}
       propertyPath: timeStarPoint3
-      value: 48
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 8908313675178853039, guid: aea97bfcc81eeb945ac0be29dfbc7be7, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1017,9 +1021,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2138799484}
     - target: {fileID: 4086034907687548816, guid: 2aab1bc59c1f8424ea746e114b3b7444, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4086034907687548816, guid: 2aab1bc59c1f8424ea746e114b3b7444, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6037736
+      objectReference: {fileID: 0}
+    - target: {fileID: 4086034907687548816, guid: 2aab1bc59c1f8424ea746e114b3b7444, type: 3}
+      propertyPath: m_Color.r
+      value: 0.08997402
+      objectReference: {fileID: 0}
+    - target: {fileID: 4086034907687548816, guid: 2aab1bc59c1f8424ea746e114b3b7444, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 1dce4a9adf8911448be78323606386c3, type: 2}
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 4935482913323545843, guid: 2aab1bc59c1f8424ea746e114b3b7444, type: 3}
       propertyPath: m_Name
       value: Goal
