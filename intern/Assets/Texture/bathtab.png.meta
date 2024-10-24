@@ -156,7 +156,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bathtab_0: 6011770629575410575
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

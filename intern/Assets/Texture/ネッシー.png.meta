@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a48f078c9ca59db4fb7f5e8824c5569f
+guid: c3b39bb636f57da4098030f5f0ba54e2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8237642963825624937
-    second: sakana_0
+      213: -6562199014276685105
+    second: "\u30CD\u30C3\u30B7\u30FC_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,30 +109,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sakana_0
+      name: "\u30CD\u30C3\u30B7\u30FC_0"
       rect:
         serializedVersion: 2
-        x: 976
-        y: 1824
-        width: 990
-        height: 335
+        x: 364
+        y: 758
+        width: 2296
+        height: 2633
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 967825571acf15270800000000000000
-      internalID: 8237642963825624937
+      spriteID: fc2ae98b3c26ee4a0800000000000000
+      internalID: -6562199014276685105
       vertices: []
       indices: 
       edges: []
@@ -156,8 +143,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      sakana_0: 8237642963825624937
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

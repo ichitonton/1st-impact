@@ -180,7 +180,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      waterpisstle_0: -6488024354427930818
+      waterpisstle_1: -3413511473616892952
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -156,7 +156,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sakana2_0: -5428689855175383585
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
