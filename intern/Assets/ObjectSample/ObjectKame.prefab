@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6108824988479687205}
   - component: {fileID: 1389974606974870732}
   m_Layer: 0
-  m_Name: ObjectNessy 1
+  m_Name: ObjectKame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

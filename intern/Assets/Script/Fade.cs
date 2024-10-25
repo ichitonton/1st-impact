@@ -15,7 +15,7 @@ public class Fade : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("set color");
+        //Debug.Log("set color");
         color = gameObject.GetComponent<Image>().color;
         color = new Color32(255, 255, 255, 255);
         alpha = 255;

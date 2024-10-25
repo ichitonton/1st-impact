@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class StartCountDown : MonoBehaviour
 {
     private Text text;
-    public Fade fade;
     private bool isCountDown = false;
     public float countDownSecond;
     public float nowFrameParSecond = 60;
@@ -15,6 +14,8 @@ public class StartCountDown : MonoBehaviour
     public GameObject CountDown2;
     public GameObject CountDown1;
     public GameObject BlockTatchPanel;
+    public MoveCamera moveCamera;
+    private bool endCountDown = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,9 +29,13 @@ public class StartCountDown : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!fade.IsFadeIn())
+        if (moveCamera.GetGameStart())
         {
             isCountDown = true;
+        }
+        if(endCountDown)
+        {
+            isCountDown = false;
         }
 
         if (isCountDown)
@@ -71,6 +76,7 @@ public class StartCountDown : MonoBehaviour
                     BlockTatchPanel.SetActive(false);
                     text.text = "";
                     Time.timeScale = 1;
+                    endCountDown = true;
                 }
             }
             //text.text = countFrame.ToString();

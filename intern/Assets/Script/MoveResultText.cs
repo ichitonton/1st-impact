@@ -19,6 +19,12 @@ public class MoveResultText : MonoBehaviour
     public GameObject star1;
     public GameObject star2;
     public GameObject star3;
+    public int nowFrameParSeconds = 60;
+    private int frameCount = 0;
+    public float stopSecondIsGoal = 1.0f;
+    public MoveCamera moveCamera;
+    public Rigidbody2D dack;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +36,7 @@ public class MoveResultText : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         //ゴールしたら
 
@@ -100,12 +106,18 @@ public class MoveResultText : MonoBehaviour
         //結果が決まったら
         if (isDecisionResult)
         {
-            //テキストを動かす
-            trans.position = new Vector3(trans.position.x + moveSpeed, trans.position.y, trans.position.z);
-
-            if(trans.position.x >= stopPositionX)
+            moveCamera.CameraStop();
+            frameCount += 1;
+            dack.velocityX *= 0.9f;
+            if (frameCount >= nowFrameParSeconds * stopSecondIsGoal)
             {
-                trans.position = new Vector3(stopPositionX, trans.position.y, trans.position.z);
+                //テキストを動かす
+                trans.position = new Vector3(trans.position.x + moveSpeed, trans.position.y, trans.position.z);
+
+                if (trans.position.x >= stopPositionX)
+                {
+                    trans.position = new Vector3(stopPositionX, trans.position.y, trans.position.z);
+                }
             }
         }
 

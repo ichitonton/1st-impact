@@ -170,7 +170,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4067602664649049654, guid: c2796f4eb70d6a745b5e37c7aad53a19, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.67
       objectReference: {fileID: 0}
     - target: {fileID: 4067602664649049654, guid: c2796f4eb70d6a745b5e37c7aad53a19, type: 3}
       propertyPath: m_LocalPosition.z
@@ -617,6 +617,10 @@ PrefabInstance:
       propertyPath: water
       value: 
       objectReference: {fileID: 896417070}
+    - target: {fileID: 6108824988479687205, guid: a110336da53fbae459d692723c59016e, type: 3}
+      propertyPath: m_Constraints
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1456,6 +1460,18 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 491380145}
+    - target: {fileID: 351816124153637642, guid: 2aab1bc59c1f8424ea746e114b3b7444, type: 3}
+      propertyPath: water
+      value: 
+      objectReference: {fileID: 896417070}
+    - target: {fileID: 1422272527285901910, guid: 2aab1bc59c1f8424ea746e114b3b7444, type: 3}
+      propertyPath: water
+      value: 
+      objectReference: {fileID: 896417070}
+    - target: {fileID: 3981841046622875570, guid: 2aab1bc59c1f8424ea746e114b3b7444, type: 3}
+      propertyPath: water
+      value: 
+      objectReference: {fileID: 896417070}
     - target: {fileID: 4086034907687548816, guid: 2aab1bc59c1f8424ea746e114b3b7444, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -1464,6 +1480,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goal
       objectReference: {fileID: 0}
+    - target: {fileID: 6711762990055265497, guid: 2aab1bc59c1f8424ea746e114b3b7444, type: 3}
+      propertyPath: water
+      value: 
+      objectReference: {fileID: 896417070}
     - target: {fileID: 8093189137330340705, guid: 2aab1bc59c1f8424ea746e114b3b7444, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
@@ -1588,7 +1608,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 398273031721017168, guid: af2d85a0545c3cc4598b117f7c4cd55b, type: 3}
       propertyPath: m_Name
-      value: ObjectNessy 1
+      value: ObjectKame
       objectReference: {fileID: 0}
     - target: {fileID: 2670211451487510100, guid: af2d85a0545c3cc4598b117f7c4cd55b, type: 3}
       propertyPath: m_LocalPosition.x
