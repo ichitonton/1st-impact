@@ -687,6 +687,11 @@ MonoBehaviour:
   star1: {fileID: 3751229751526011673}
   star2: {fileID: 2667876495342459197}
   star3: {fileID: 4373949931602203921}
+  nowFrameParSeconds: 60
+  stopSecondIsGoal: 3
+  moveCamera: {fileID: 0}
+  dack: {fileID: 0}
+  yubi: {fileID: 7078948781404750867}
 --- !u!1 &2039354507510415004
 GameObject:
   m_ObjectHideFlags: 0
@@ -2355,13 +2360,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88fc1d2269bef8c46b621c19f6ec64c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fade: {fileID: 1181577209300020}
   countDownSecond: 4
   nowFrameParSecond: 60
   CountDown3: {fileID: 4648911683257109208}
   CountDown2: {fileID: 8455206219364547378}
   CountDown1: {fileID: 7939588822234603005}
   BlockTatchPanel: {fileID: 5736024939005720585}
+  moveCamera: {fileID: 0}
 --- !u!1 &5475196810711741408
 GameObject:
   m_ObjectHideFlags: 0

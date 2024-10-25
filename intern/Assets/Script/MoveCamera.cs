@@ -5,12 +5,13 @@ using UnityEngine;
 public class MoveCamera : MonoBehaviour
 {
     public GameObject player;
+    public Transform goal;
     public Vector2 offset;
     private Transform cameraTrans;
-    public float goalPositionX;
+    private float goalPositionX;
     private bool gameStart = false;
     public int nowFrameRate = 60;
-    public float surveyScond;
+    public float surveyScond = 4.0f;
     private float firstCameraToGoalDis;
     private int countFrame;
     public Fade fade;
@@ -19,6 +20,7 @@ public class MoveCamera : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        goalPositionX = goal.position.x;
         cameraTrans = gameObject.GetComponent<Transform>();
         firstCameraToGoalDis = goalPositionX - (player.GetComponent<Transform>().position.x + offset.x);
         Vector3 cameraPosition = new Vector3(goalPositionX, offset.y, -10.0f);

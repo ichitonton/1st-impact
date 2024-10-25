@@ -24,6 +24,7 @@ public class MoveResultText : MonoBehaviour
     public float stopSecondIsGoal = 1.0f;
     public MoveCamera moveCamera;
     public Rigidbody2D dack;
+    public GameObject yubi;
 
     // Start is called before the first frame update
     void Start()
@@ -109,6 +110,8 @@ public class MoveResultText : MonoBehaviour
             moveCamera.CameraStop();
             frameCount += 1;
             dack.velocityX *= 0.9f;
+            dack.velocityY *= 0.95f;
+            yubi.SetActive(false);
             if (frameCount >= nowFrameParSeconds * stopSecondIsGoal)
             {
                 //テキストを動かす
