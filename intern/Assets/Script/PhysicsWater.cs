@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class PhysicsWater : MonoBehaviour
 {
@@ -14,11 +15,16 @@ public class PhysicsWater : MonoBehaviour
     public float douwnForceMagnification = 1.0f;
     public float inWaterGravityScale = 1.0f;
     public float outWaterGravityScale = 1.0f;
+    public bool isSoundWater = false;
+    private AudioSource waterSound;
+    public AudioClip waterInClip;
+    public AudioClip waterOutClip;
 
     // Start is called before the first frame update
     void Start()
     {
         rigid = gameObject.GetComponent<Rigidbody2D>();
+        waterSound = GetComponent<AudioSource>();
 
     }
 
@@ -27,6 +33,20 @@ public class PhysicsWater : MonoBehaviour
     {
         //distansFromDefault = defaultPositionX - gameObject.GetComponent<Transform>().position.x;
         //rigid.velocityX = distansFromDefault * 0.1f;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject == water)
+        {
+            if (waterSound != null)
+            {
+                waterSound.PlayOneShot(waterInClip);
+            }
+            else
+            {
+                Debug.Log("audiosource=null");
+            }
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -64,6 +84,15 @@ public class PhysicsWater : MonoBehaviour
         {
             rigid.gravityScale = outWaterGravityScale;
             Debug.Log("out water" + rigid.gravityScale);
+
+            if (waterSound != null)
+            {
+                waterSound.PlayOneShot(waterOutClip);
+            }
+            else
+            {
+                Debug.Log("audiosource=null");
+            }
         }
     }
 
