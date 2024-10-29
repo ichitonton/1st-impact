@@ -13,6 +13,7 @@ public class StartCountDown : MonoBehaviour
     public GameObject CountDown3;
     public GameObject CountDown2;
     public GameObject CountDown1;
+    public GameObject START;
     public GameObject BlockTatchPanel;
     public MoveCamera moveCamera;
     private bool endCountDown = false;
@@ -26,6 +27,7 @@ public class StartCountDown : MonoBehaviour
         CountDown3.SetActive(false);
         CountDown2.SetActive(false);
         CountDown1.SetActive(false);
+        START.SetActive(false);
         BlockTatchPanel.SetActive(true);
     }
 
@@ -54,6 +56,7 @@ public class StartCountDown : MonoBehaviour
                     CountDown3.SetActive(true);
                     CountDown2.SetActive(false);
                     CountDown1.SetActive(false);
+                    START.SetActive(false);
                     if (audioSource != null)
                     {
                         audioSource.PlayOneShot(countDownClip);
@@ -68,6 +71,7 @@ public class StartCountDown : MonoBehaviour
                     CountDown3.SetActive(false);
                     CountDown2.SetActive(true);
                     CountDown1.SetActive(false);
+                    START.SetActive(false);
                     if (audioSource != null)
                     {
                         audioSource.PlayOneShot(countDownClip);
@@ -82,6 +86,7 @@ public class StartCountDown : MonoBehaviour
                     CountDown3.SetActive(false);
                     CountDown2.SetActive(false);
                     CountDown1.SetActive(true);
+                    START.SetActive(false);
                     if (audioSource != null)
                     {
                         audioSource.PlayOneShot(countDownClip);
@@ -96,6 +101,7 @@ public class StartCountDown : MonoBehaviour
                     CountDown3.SetActive(false);
                     CountDown2.SetActive(false);
                     CountDown1.SetActive(false);
+                    START.SetActive(true);
                     if (audioSource != null)
                     {
                         audioSource.PlayOneShot(startClip);
@@ -104,12 +110,13 @@ public class StartCountDown : MonoBehaviour
                     {
                         Debug.Log("audiosource=null");
                     }
-                    text.text = "START";
+                    //text.text = "START";
                 }
                 else
                 {
+                    START.SetActive(false);
                     BlockTatchPanel.SetActive(false);
-                    text.text = "";
+                    //text.text = "";
                     Time.timeScale = 1;
                     endCountDown = true;
                 }

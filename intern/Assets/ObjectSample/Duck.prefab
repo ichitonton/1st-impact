@@ -158,7 +158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeedBegin: 1.75
   moveAngularBegin: 100
-  addForcePower: 2
+  addForcePower: 3
   addVelocityAngular: 4
   fade: {fileID: 0}
   sliderSink: {fileID: 0}
