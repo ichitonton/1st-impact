@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 //using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class ButtonAction : MonoBehaviour
@@ -10,9 +11,11 @@ public class ButtonAction : MonoBehaviour
     public Fade fade;
     string sceneName = "NULL";
     private GameObject scoreText;
+    private AudioSource audioSource = null;
     void Start()
     {
         scoreText = GameObject.Find("ScoreText"); // ç°âÒí«â¡â”èä    
+        audioSource = GetComponent<AudioSource>();
     }
     void Update()
     {
@@ -50,6 +53,17 @@ public class ButtonAction : MonoBehaviour
             //UnityEditor.EditorApplication.isPlaying = false;
 
             Application.Quit();
+        }
+    }
+    public void PlaySE(AudioClip clip)
+    {
+        if (audioSource != null)
+        {
+            audioSource.PlayOneShot(clip);
+        }
+        else
+        {
+            Debug.Log("audiosource=null");
         }
     }
 
