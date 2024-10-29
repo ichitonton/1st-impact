@@ -16,6 +16,9 @@ public class StartCountDown : MonoBehaviour
     public GameObject BlockTatchPanel;
     public MoveCamera moveCamera;
     private bool endCountDown = false;
+    private AudioSource audioSource = null;
+    public AudioClip countDownClip;
+    public AudioClip startClip;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +36,7 @@ public class StartCountDown : MonoBehaviour
         {
             isCountDown = true;
         }
-        if(endCountDown)
+        if (endCountDown)
         {
             isCountDown = false;
         }
@@ -51,24 +54,56 @@ public class StartCountDown : MonoBehaviour
                     CountDown3.SetActive(true);
                     CountDown2.SetActive(false);
                     CountDown1.SetActive(false);
+                    if (audioSource != null)
+                    {
+                        audioSource.PlayOneShot(countDownClip);
+                    }
+                    else
+                    {
+                        Debug.Log("audiosource=null");
+                    }
                 }
                 else if (countDownSecond > 1)
                 {
                     CountDown3.SetActive(false);
                     CountDown2.SetActive(true);
                     CountDown1.SetActive(false);
+                    if (audioSource != null)
+                    {
+                        audioSource.PlayOneShot(countDownClip);
+                    }
+                    else
+                    {
+                        Debug.Log("audiosource=null");
+                    }
                 }
                 else if (countDownSecond > 0)
                 {
                     CountDown3.SetActive(false);
                     CountDown2.SetActive(false);
                     CountDown1.SetActive(true);
+                    if (audioSource != null)
+                    {
+                        audioSource.PlayOneShot(countDownClip);
+                    }
+                    else
+                    {
+                        Debug.Log("audiosource=null");
+                    }
                 }
                 else if (countDownSecond > -1)
                 {
                     CountDown3.SetActive(false);
                     CountDown2.SetActive(false);
                     CountDown1.SetActive(false);
+                    if (audioSource != null)
+                    {
+                        audioSource.PlayOneShot(startClip);
+                    }
+                    else
+                    {
+                        Debug.Log("audiosource=null");
+                    }
                     text.text = "START";
                 }
                 else
