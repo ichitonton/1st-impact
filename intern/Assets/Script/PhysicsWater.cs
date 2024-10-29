@@ -19,6 +19,10 @@ public class PhysicsWater : MonoBehaviour
     private AudioSource waterSound;
     public AudioClip waterInClip;
     public AudioClip waterOutClip;
+    private float maxSoundSpeed = 10.0f;
+    private float minSoundSpeed = 2.5f;
+    public bool isEffect = false;
+    public ParticleSystem particle;
 
     // Start is called before the first frame update
     void Start()
@@ -34,17 +38,54 @@ public class PhysicsWater : MonoBehaviour
         //distansFromDefault = defaultPositionX - gameObject.GetComponent<Transform>().position.x;
         //rigid.velocityX = distansFromDefault * 0.1f;
     }
+    private void SetVolume()
+    {
+        float speedY = rigid.velocityY;
+
+        //ê≥ãKâª
+        if(speedY < 0)
+        {
+            speedY *= -1;
+        }
+
+        if(speedY < minSoundSpeed)
+        {
+            waterSound.volume = 0.0f;
+        }
+        else if(speedY > maxSoundSpeed)
+        {
+            waterSound.volume = 1.0f;
+           // particle.startSpeed = (maxSoundSpeed - minSoundSpeed) / maxSoundSpeed * 6.0f;
+            particle.startSpeed = speedY;
+            particle.GetComponent<Transform>().position = rigid.position;
+            //particle.GetComponent<Transform>().localScale = new Vector3((maxSoundSpeed - minSoundSpeed) / maxSoundSpeed * 0.35f, (maxSoundSpeed - minSoundSpeed) / maxSoundSpeed * 0.35f, 1.0f);
+            particle.Play();
+        }
+        else
+        {
+            waterSound.volume = (speedY - minSoundSpeed) / (maxSoundSpeed - minSoundSpeed);
+            //particle.startSpeed = (maxSoundSpeed - minSoundSpeed) / maxSoundSpeed * 6.0f;
+            particle.startSpeed = speedY;
+            particle.GetComponent<Transform>().position = rigid.position;
+            //particle.GetComponent<Transform>().localScale = new Vector3((maxSoundSpeed - minSoundSpeed) / maxSoundSpeed * 0.35f, (maxSoundSpeed - minSoundSpeed) / maxSoundSpeed * 0.35f, 1.0f);
+            particle.Play();
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject == water)
+        if (isSoundWater)
         {
-            if (waterSound != null)
+            if (collision.gameObject == water)
             {
-                waterSound.PlayOneShot(waterInClip);
-            }
-            else
-            {
-                Debug.Log("audiosource=null");
+                if (waterSound != null)
+                {
+                    SetVolume();
+                    waterSound.PlayOneShot(waterInClip);
+                }
+                else
+                {
+                    Debug.Log("audiosource=null");
+                }
             }
         }
     }
@@ -85,13 +126,17 @@ public class PhysicsWater : MonoBehaviour
             rigid.gravityScale = outWaterGravityScale;
             Debug.Log("out water" + rigid.gravityScale);
 
-            if (waterSound != null)
+            if (isSoundWater)
             {
-                waterSound.PlayOneShot(waterOutClip);
-            }
-            else
-            {
-                Debug.Log("audiosource=null");
+                SetVolume();
+                if (waterSound != null)
+                {
+                    waterSound.PlayOneShot(waterOutClip);
+                }
+                else
+                {
+                    Debug.Log("audiosource=null");
+                }
             }
         }
     }
