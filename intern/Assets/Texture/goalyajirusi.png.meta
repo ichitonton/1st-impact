@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bbd4bbcb88c2e34478b308e78e2b4f46
+guid: 941525eba0ec199408a98aee49213110
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7887968355271199877
-    second: sinkGage_0
+      213: 4881632769664701136
+    second: goalyajirusi_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,30 +109,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sinkGage_0
+      name: goalyajirusi_0
       rect:
         serializedVersion: 2
-        x: 1305
-        y: 200
-        width: 320
-        height: 3644
+        x: 26
+        y: 17
+        width: 1033
+        height: 677
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 58c46774d61b77d60800000000000000
-      internalID: 7887968355271199877
+      spriteID: 0d255c7d32b0fb340800000000000000
+      internalID: 4881632769664701136
       vertices: []
       indices: 
       edges: []
@@ -157,7 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sinkGage_0: 7887968355271199877
+      goalyajirusi_0: 4881632769664701136
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

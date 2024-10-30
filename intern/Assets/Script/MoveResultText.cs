@@ -25,6 +25,12 @@ public class MoveResultText : MonoBehaviour
     public MoveCamera moveCamera;
     public Rigidbody2D dack;
     public GameObject yubi;
+    private AudioSource audioSource = null;
+    public AudioSource BGM;
+    public AudioClip goalSE;
+    public AudioClip failsSE;
+    private bool isMove = false;
+    private bool isGoal = false;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +40,7 @@ public class MoveResultText : MonoBehaviour
         star1.SetActive(false);
         star2.SetActive(false);
         star3.SetActive(false);
+        audioSource = GetComponent<AudioSource>();  
     }
 
     // Update is called once per frame
@@ -90,6 +97,8 @@ public class MoveResultText : MonoBehaviour
                 }
                 //クリアなら
                 nextSceneButton.SetActive(true);
+                isGoal = true; 
+                //BGM.Stop();
             }
 
             //時間内にゴールできなかったら
@@ -101,6 +110,8 @@ public class MoveResultText : MonoBehaviour
                 timer.StopTimer();
 
                 resultText.text = failureMessage;
+                isGoal = false;
+                //BGM.Stop();
             }
         }
 
@@ -112,8 +123,26 @@ public class MoveResultText : MonoBehaviour
             dack.velocityX *= 0.9f;
             dack.velocityY *= 0.95f;
             yubi.SetActive(false);
-            if (frameCount >= nowFrameParSeconds * stopSecondIsGoal)
+
+            BGM.volume -= 0.05f ;
+
+            if (frameCount >= nowFrameParSeconds * stopSecondIsGoal && !isMove)
             {
+                BGM.Stop();
+                if (isGoal)
+                {
+                    Debug.Log("goalSE");
+                    audioSource.PlayOneShot(goalSE);
+                }
+                else if (!isGoal)
+                { 
+                    audioSource.PlayOneShot(failsSE);
+                }
+                isMove = true;
+            }
+            if(isMove)
+            {
+                BGM.volume = 1.0f;
                 //テキストを動かす
                 trans.position = new Vector3(trans.position.x + moveSpeed, trans.position.y, trans.position.z);
 

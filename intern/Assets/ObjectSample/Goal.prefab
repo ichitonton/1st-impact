@@ -110,6 +110,11 @@ MonoBehaviour:
   douwnForceMagnification: 0.98
   inWaterGravityScale: 1
   outWaterGravityScale: 1
+  isSoundWater: 0
+  waterInClip: {fileID: 0}
+  waterOutClip: {fileID: 0}
+  isEffect: 0
+  particle: {fileID: 0}
 --- !u!114 &3111841467317796899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,6 +302,11 @@ MonoBehaviour:
   douwnForceMagnification: 0.98
   inWaterGravityScale: 1
   outWaterGravityScale: 1
+  isSoundWater: 0
+  waterInClip: {fileID: 0}
+  waterOutClip: {fileID: 0}
+  isEffect: 0
+  particle: {fileID: 0}
 --- !u!114 &693292755026010466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -374,6 +384,92 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.000030517578, y: -0.0000009536743}
   m_Radius: 8.635
+--- !u!1 &4283153743654559274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4306591326625031955}
+  - component: {fileID: 3855998762913104293}
+  m_Layer: 0
+  m_Name: goalyajirusi_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4306591326625031955
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4283153743654559274}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -28.7, y: -1.1, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 8093189137330340705}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &3855998762913104293
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4283153743654559274}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 4881632769664701136, guid: 941525eba0ec199408a98aee49213110, type: 3}
+  m_Color: {r: 0.7132075, g: 0.6984051, b: 0.6984051, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 10.33, y: 6.77}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &4935482913323545843
 GameObject:
   m_ObjectHideFlags: 0
@@ -412,6 +508,7 @@ Transform:
   - {fileID: 1198322991166154691}
   - {fileID: 337240310944484690}
   - {fileID: 6625011325680008254}
+  - {fileID: 4306591326625031955}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4086034907687548816
@@ -528,6 +625,11 @@ MonoBehaviour:
   douwnForceMagnification: 0.98
   inWaterGravityScale: 1
   outWaterGravityScale: 1
+  isSoundWater: 0
+  waterInClip: {fileID: 0}
+  waterOutClip: {fileID: 0}
+  isEffect: 0
+  particle: {fileID: 0}
 --- !u!114 &3048163469462469860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -688,6 +790,11 @@ MonoBehaviour:
   douwnForceMagnification: 0.98
   inWaterGravityScale: 1
   outWaterGravityScale: 1
+  isSoundWater: 0
+  waterInClip: {fileID: 0}
+  waterOutClip: {fileID: 0}
+  isEffect: 0
+  particle: {fileID: 0}
 --- !u!114 &6080502362394394591
 MonoBehaviour:
   m_ObjectHideFlags: 0

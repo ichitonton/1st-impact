@@ -29,6 +29,7 @@ public class StartCountDown : MonoBehaviour
         CountDown1.SetActive(false);
         START.SetActive(false);
         BlockTatchPanel.SetActive(true);
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
