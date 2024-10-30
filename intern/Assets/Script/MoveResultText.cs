@@ -124,7 +124,7 @@ public class MoveResultText : MonoBehaviour
             dack.velocityY *= 0.95f;
             yubi.SetActive(false);
 
-            BGM.volume -= 0.05f ;
+            BGM.volume -= 0.02f ;
 
             if (frameCount >= nowFrameParSeconds * stopSecondIsGoal && !isMove)
             {
