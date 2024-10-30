@@ -5,7 +5,38 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Stage1.unity
+    guid: 8b83dfa33a34343488edf54043c03efb
+  - enabled: 1
+    path: Assets/Scenes/Stage2.unity
+    guid: 01efef0992e635c4ea3166ff42e939ce
+  - enabled: 1
+    path: Assets/Scenes/Stage3.unity
+    guid: a1731e86e5b44ff4f9e56007d7c07e03
+  - enabled: 1
+    path: Assets/Scenes/Stage4.unity
+    guid: 97218101bf2fb3b4b9b2ab8a09dc6eaa
+  - enabled: 1
+    path: Assets/Scenes/Stage5.unity
+    guid: f0a27370df7edac44acf6be913f88ea3
+  - enabled: 1
+    path: Assets/Scenes/Stage6.unity
+    guid: 1635d26605fcb904985cf8f23fd212e0
+  - enabled: 1
+    path: Assets/Scenes/Stage7.unity
+    guid: 2389ddb8ad3221b4498d42cbee749ef2
+  - enabled: 1
+    path: Assets/Scenes/Stage8.unity
+    guid: 4a5d6af68f49a2944b6e817a1c9afe3c
+  - enabled: 1
+    path: Assets/Scenes/StageSelect.unity
+    guid: ea0f28a4ac141454b88f6db029d24895
+  - enabled: 1
+    path: Assets/Scenes/TitleScene.unity
+    guid: 6a970ac535020d04c963163771e664c0
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
