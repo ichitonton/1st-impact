@@ -2288,7 +2288,7 @@ MonoBehaviour:
   successMessage: GOAL!!
   failureMessage: GAMEOVER
   stopPositionX: 540
-  thisSceneName: Stage2
+  thisSceneName: Stage1
   star1: {fileID: 972719827}
   star2: {fileID: 569550256}
   star3: {fileID: 103110317}
